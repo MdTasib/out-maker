@@ -1,13 +1,15 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Product from "./pages/product/product";
 
 function App() {
 	return (
 		<>
-			<button class='inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900'>
-				Button
-			</button>
-			<button class='btn btn-primary'>Button</button>
-			<button class='btn w-64 rounded-full'>Button</button>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/product' element={<Product />} />
+			</Routes>
 		</>
 	);
 }
