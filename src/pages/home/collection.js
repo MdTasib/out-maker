@@ -25,7 +25,7 @@ const Collection = () => {
 			</div>
 
 			<div class='block md:flex justify-center items-center mt-4 gap-4'>
-				<div class='flex items-center bg-[#e2fafd] p-5 rounded-lg my-2'>
+				<div class='flex items-center bg-[#e2fafd] p-5 rounded-xl my-2'>
 					<div class='relative'>
 						<img
 							className='absolute h-14 w-48 bottom-36 right-12'
@@ -47,7 +47,7 @@ const Collection = () => {
 						</div>
 					</div>
 				</div>
-				<div class='flex items-center bg-[#FFF5E4] p-5 rounded-lg my-2'>
+				<div class='flex items-center bg-[#FFF5E4] p-5 rounded-xl my-2'>
 					<div class=''>
 						<h6 class='text-primary text-2xl font-semibold'>Harriet Ottoman</h6>
 						<p class='text-sm font-normal leading-6 py-3'>
