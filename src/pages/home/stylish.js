@@ -48,8 +48,11 @@ const Stylish = () => {
 
 			<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10'>
 				{services.map(service => (
-					<div class=''>
-						<img src={service.image} alt='' className='h-60 w-full' />
+					<div className=''>
+						<div class='relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
+							<img src={service.image} class='max-w-xs' alt='Louvre' />
+							<div class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-primary via-primary-400 to-accent opacity-0 transition duration-300 ease-in-out hover:opacity-70'></div>
+						</div>
 						<h4 class='text-primary font-semibold text-xl py-2'>
 							Harriet Side table
 						</h4>
