@@ -4,6 +4,7 @@ import Collection from "./collection";
 import Stylish from "./stylish";
 import Envoirment from "./envoirment";
 import Meterials from "./meterials";
+import Footer from "../../shared/Footer/Footer";
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 			<Stylish />
 			<Envoirment />
 			<Meterials />
+			<Footer />
 		</main>
 	);
 };
