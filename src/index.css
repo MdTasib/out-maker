@@ -10,3 +10,16 @@ body {
 code {
 	font-family: "Poppins", sans-serif;
 }
+
+.ellipse {
+	width: 100px;
+	height: 95px;
+	border-radius: 50%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 47%;
+	top: 13%;
+}
