@@ -11,7 +11,7 @@ const Navbar = () => {
 			<NavbarTop />
 
 			{/* main menu */}
-			<div className='container mx-auto p-0 navbar'>
+			<div className='container mx-auto p-0 px-10 navbar'>
 				<div className='navbar-start hidden lg:flex'>
 					{/* <ul className='menu menu-horizontal px-1'>
 						<li>

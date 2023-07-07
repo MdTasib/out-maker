@@ -6,7 +6,7 @@ import langIcon from "../../assets/icons/english.svg";
 const NavbarTop = () => {
 	return (
 		<div className='bg-primary text-white'>
-			<div className='container mx-auto'>
+			<div className='container mx-auto px-10'>
 				<div className='navbar'>
 					<div className='navbar-start'>
 						<span className='flex items-center text-xs'>
