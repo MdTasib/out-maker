@@ -74,7 +74,9 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</div>
-					<img src={logo} alt='' />
+					<div className='bg-white p-2 h-20 w-20 flex justify-center items-center absolute rounded-full bottom-[22rem]'>
+						<img src={logo} alt='' className='' />
+					</div>
 				</div>
 
 				<div className='navbar-end pe-5'>

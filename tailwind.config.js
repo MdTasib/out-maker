@@ -12,6 +12,12 @@ module.exports = {
 					"base-100": "#ffffff",
 				},
 			},
+			{
+				fontFamily: {
+					poppins: ["Poppins", "system-ui"],
+					garamond: ["EB Garamond", "system-ui"],
+				},
+			},
 		],
 	},
 	plugins: [require("daisyui")],
