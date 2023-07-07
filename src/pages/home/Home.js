@@ -3,6 +3,7 @@ import Header from "./header";
 import Collection from "./collection";
 import Stylish from "./stylish";
 import Envoirment from "./envoirment";
+import Meterials from "./meterials";
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 			<Collection />
 			<Stylish />
 			<Envoirment />
+			<Meterials />
 		</main>
 	);
 };

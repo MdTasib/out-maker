@@ -36,7 +36,7 @@ const services = [
 
 const Stylish = () => {
 	return (
-		<section className='container mx-auto px-10 py-16'>
+		<section className='container mx-auto px-10 py-20'>
 			<div className='text-center'>
 				<h2 className='text-primary font-semibold text-4xl'>
 					Pick Something Stylish

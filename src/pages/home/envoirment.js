@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Envoirment = () => {
 	return (
-		<section className='container mx-auto px-10 py-16'>
+		<section className='container mx-auto px-10 py-20'>
 			<div className='grid items-center grid-cols-1 md:grid-cols-2'>
 				<div className='mb-6 md:mb-0'>
 					<h4 className='text-primary text-4xl font-semibold'>
