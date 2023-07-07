@@ -26,7 +26,12 @@ const Collection = () => {
 
 			<div class='block md:flex justify-center items-center mt-4 gap-4'>
 				<div class='flex items-center bg-[#e2fafd] p-5 rounded-lg my-2'>
-					<div class=''>
+					<div class='relative'>
+						<img
+							className='absolute h-14 w-48 bottom-36 right-12'
+							src={loungeVactor}
+							alt=''
+						/>
 						<h6 class='text-primary text-2xl font-semibold'>Chaise Lounge</h6>
 						<p class='text-sm font-normal leading-6 py-3'>
 							We are small family business in Europe who love to make
