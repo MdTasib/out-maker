@@ -11,7 +11,7 @@ const Navbar = () => {
 			<NavbarTop />
 
 			{/* main menu */}
-			<div className='container mx-auto p-0 px-10 navbar'>
+			<div className='container mx-auto p-0 px-10 navbar relative'>
 				<div className='navbar-start hidden lg:flex'>
 					{/* <ul className='menu menu-horizontal px-1'>
 						<li>
@@ -82,7 +82,7 @@ const Navbar = () => {
 				</div>
 
 				<div className='navbar-end pe-5'>
-					<div className='relative text-[#AAA9AA] me-2'>
+					<div className='relative text-[#AAA9AA] me-6'>
 						<input
 							type='search'
 							name='serch'
@@ -107,7 +107,7 @@ const Navbar = () => {
 							</svg>
 						</button>
 					</div>
-					<span className='me-4 border-red-100 border border-gray-700 rounded-full p-1'>
+					<span className='me-6 border-red-100 border border-gray-700 rounded-full p-1'>
 						<GoPeople />
 					</span>
 					<span className='border-red-100 border border-gray-700 rounded-full p-1'>

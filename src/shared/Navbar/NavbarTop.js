@@ -21,7 +21,7 @@ const NavbarTop = () => {
 					<div className='navbar-end text-xs'>
 						<p className='pe-3'>Order tracking</p>
 						<p className='pe-3'>Help</p>
-						<img className='pe-1' src={langIcon} alt='' />
+						<img className='pe-1 w-5' src={langIcon} alt='' />
 						<select className='select select-primary bg-primary text-xs w-24 p-0'>
 							<option selected>English</option>
 							<option>Bangla</option>
