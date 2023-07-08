@@ -3,6 +3,7 @@ import Slider from "infinite-react-carousel";
 import img1 from "../../assets/images/table1.png";
 import img2 from "../../assets/images/table2.png";
 import img3 from "../../assets/images/table3.png";
+import "../../assets/css/stylish.css";
 
 const services = [
 	{
@@ -72,7 +73,7 @@ const Stylish = () => {
 	};
 
 	return (
-		<section className='container mx-auto px-10 py-20'>
+		<section className='container mx-auto px-10 py-20 stylish'>
 			<div className='text-center'>
 				<h2 className='text-primary font-semibold text-4xl'>
 					Pick Something Stylish
