@@ -106,7 +106,7 @@ const Stylish = () => {
 				))}
 			</Carousel>
 
-			<div className='absolute bottom-[5%] left-[7%] bg-[#809DFF] p-[1px] ml-20 w-[60%] stylish-devider'></div>
+			<div className='absolute bottom-[5%] left-[7%] bg-[#d5dfff] p-[1px] ml-20 w-[60%] stylish-devider'></div>
 		</section>
 	);
 };
