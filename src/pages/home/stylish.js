@@ -37,7 +37,7 @@ const services = [
 	},
 ];
 
-const Stylish2 = () => {
+const Stylish = () => {
 	return (
 		<section className='container mx-auto px-10 py-20 relative stylish'>
 			<div className='text-center pb-4'>
@@ -111,4 +111,4 @@ const Stylish2 = () => {
 	);
 };
 
-export default Stylish2;
+export default Stylish;
