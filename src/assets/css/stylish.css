@@ -1,0 +1,74 @@
+.stylish_slider {
+	position: relative;
+}
+
+.stylish .carousel-initialized {
+	padding-top: 30px !important;
+	padding-bottom: 80px !important;
+}
+
+.stylish .carousel-initialized .carousel-next {
+	position: absolute !important;
+	top: 45%;
+	background-color: #002b5b;
+}
+
+.stylish .carousel-initialized .carousel-next::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.stylish .carousel-initialized .carousel-prev {
+	position: absolute !important;
+	top: 90%;
+	left: 90%;
+	background-color: #002b5b;
+}
+
+.stylish .carousel-initialized .carousel-prev::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.stylish .carousel-initialized .carousel-prev {
+	top: 90%;
+	left: 90%;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #002b5b;
+	margin-left: -15px;
+}
+
+.stylish .carousel-initialized .carousel-next {
+	top: 90%;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #002b5b;
+}
+
+.stylish .carousel-dots {
+	width: 100px !important;
+	position: absolute;
+	top: 88%;
+	left: 0;
+}
+
+.stylish .carousel-dots li.carousel-dots-active button:before {
+	color: #002b5b !important;
+}
+
+@media only screen and (max-width: 1040px) {
+	.stylish-devider {
+		display: none;
+	}
+	.stylish .carousel-dots {
+		display: none !important;
+	}
+
+	.stylish .carousel-initialized .carousel-next {
+		left: 55%;
+	}
+	.stylish .carousel-initialized .carousel-prev {
+		left: 45%;
+	}
+}

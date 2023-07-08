@@ -56,8 +56,9 @@ const Meterials = () => {
 
 				<div className=''>
 					<iframe
-						className='w-full h-96 rounded-2xl pt-10'
-						src='https://www.youtube.com/embed/rSkMolfrwLI'
+						style={{ height: "600px" }}
+						className='w-full rounded-2xl pt-10'
+						src='https://www.youtube.com/embed/cHBqwj0Ed_I'
 						frameBorder={0}
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen

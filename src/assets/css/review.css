@@ -1,0 +1,46 @@
+.review {
+	position: relative;
+}
+
+.review .carousel-initialized {
+	padding: 0px 0px !important;
+}
+
+.review .carousel-initialized .carousel-next {
+	position: absolute !important;
+	top: 45%;
+	background-color: #002b5b;
+}
+
+.review .carousel-initialized .carousel-next::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.review .carousel-initialized .carousel-prev {
+	position: absolute !important;
+	top: 90%;
+	left: 90%;
+	background-color: #002b5b;
+}
+
+.review .carousel-initialized .carousel-prev::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.review .carousel-initialized .carousel-prev {
+	top: 1%;
+	left: 90%;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #002b5b;
+	margin-left: -15px;
+}
+
+.review .carousel-initialized .carousel-next {
+	top: 1%;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #002b5b;
+}
