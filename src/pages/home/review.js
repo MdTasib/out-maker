@@ -96,7 +96,7 @@ const Review = () => {
 				renderDotsOutside={false}
 				responsive={{
 					desktop: {
-						breakpoint: { min: 1024 },
+						breakpoint: { max: 5000, min: 1024 },
 						items: 3,
 					},
 					tablet: {
