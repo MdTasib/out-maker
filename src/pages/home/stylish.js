@@ -69,7 +69,7 @@ const Stylish = () => {
 				renderDotsOutside={false}
 				responsive={{
 					desktop: {
-						breakpoint: { max: 1560, min: 1024 },
+						breakpoint: { min: 1024 },
 						items: 3,
 					},
 					tablet: {
