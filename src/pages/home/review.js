@@ -5,6 +5,7 @@ import Slider from "infinite-react-carousel";
 import img1 from "../../assets/images/review1.png";
 import img2 from "../../assets/images/review2.png";
 import img3 from "../../assets/images/review3.png";
+import "../../assets/css/review.css";
 
 const reviews = [
 	{
@@ -66,23 +67,18 @@ const reviews = [
 
 const Review = () => {
 	const settings = {
-		autoplay: true,
-		dots: true,
+		// autoplay: true,
 		slidesPerRow: 3,
 		wheel: true,
 	};
 
 	return (
-		<section className='container mx-auto px-10 py-20'>
-			<div class='flex justify-between items-center '>
+		<section className='container mx-auto px-10 py-20 review'>
+			<div class='flex justify-between items-center absolute'>
 				<div>
-					<h1 class='text-4xl font-semibold text-primary'>
+					<h1 class='text-2xl md:text-4xl font-semibold text-primary'>
 						Our Customers Reviews
 					</h1>
-				</div>
-				<div className='flex'>
-					<BsArrowLeft className='ms-2' />
-					<BsArrowRight className='ms-2' />
 				</div>
 			</div>
 
