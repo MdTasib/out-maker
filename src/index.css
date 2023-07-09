@@ -3,27 +3,14 @@
 @tailwind utilities;
 
 body {
-	margin: 0;
-	font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 code {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.ellipse {
-	width: 100px;
-	height: 95px;
-	border-radius: 50%;
-	background: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left: 47%;
-	top: 5%;
-	transform: translate(-50%, 0);
-}
 img {
-	width: 100%;
+  width: 100%;
 }

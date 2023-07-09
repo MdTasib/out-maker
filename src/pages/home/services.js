@@ -35,22 +35,20 @@ const Services = () => {
 	return (
 		<section className='bg-accent py-10'>
 			<div className='container mx-auto px-4'>
-				<div class='sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
-					<div class='grid grid-cols-2 row-gap-8 md:grid-cols-4 divide-x-2 divide-dashed'>
-						{services.map(service => (
-							<div className='text-center'>
-								<div className='flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12'>
-									<img src={service.image} alt='' />
-								</div>
-								<h6 className='text-lg font-semibold text-[#1D1B1B]'>
-									{service.title}
-								</h6>
-								<p className='text-[#666666] text-xs pt-2'>
-									{service.description}
-								</p>
+				<div class='grid justify-between grid-cols-2 row-gap-8 md:grid-cols-4 divide-x-2 divide-dashed'>
+					{services.map(service => (
+						<div className='text-center'>
+							<div className='flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12'>
+								<img src={service.image} alt='' />
 							</div>
-						))}
-					</div>
+							<h6 className='text-lg font-semibold text-[#1D1B1B]'>
+								{service.title}
+							</h6>
+							<p className='text-[#666666] text-xs pt-2'>
+								{service.description}
+							</p>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>

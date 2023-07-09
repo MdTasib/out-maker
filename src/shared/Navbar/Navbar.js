@@ -11,17 +11,8 @@ const Navbar = () => {
 			<NavbarTop />
 
 			{/* main menu */}
-			<div className='container mx-auto p-0 px-10 navbar relative'>
+			<div className='container mx-auto py-6 md:py-0 px-10 navbar relative flex flex-col md:flex-row justify-between items-center'>
 				<div className='navbar-start hidden lg:flex'>
-					{/* <ul className='menu menu-horizontal px-1'>
-						<li>
-							<a>Item 1</a>
-						</li>
-
-						<li>
-							<a>Item 3</a>
-						</li>
-					</ul> */}
 					<div class='text-[#363434] text-sm order-3 w-full md:w-auto md:order-2'>
 						<ul class='flex font-normal justify-between'>
 							<li class='md:px-4 md:py-2 hover:text-primary'>
@@ -42,7 +33,7 @@ const Navbar = () => {
 
 				<div className='navbar-center'>
 					<div className='dropdown'>
-						<label tabIndex={0} className='btn btn-ghost lg:hidden'>
+						<label tabIndex={0} className='btn btn-ghost  lg:hidden'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								className='h-5 w-5'
@@ -74,14 +65,14 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</div>
-					<div class='ellipse align-items-center justify-content-center'>
-						<div class=''>
-							<img src={logo} alt='' className='' />
-						</div>
+				</div>
+				<div class='hidden lg:absolute top-[5%] left-1/2 -translate-x-1/2  bg-white w-[100px] h-[100px] lg:flex justify-center items-center rounded-full'>
+					<div class=''>
+						<img src={logo} alt='' className='' />
 					</div>
 				</div>
 
-				<div className='navbar-end pe-5'>
+				<div className='pe-5'>
 					<div className='relative text-[#AAA9AA] me-6'>
 						<input
 							type='search'
@@ -107,10 +98,10 @@ const Navbar = () => {
 							</svg>
 						</button>
 					</div>
-					<span className='me-6 border-red-100 border border-gray-700 rounded-full p-1'>
+					<span className='me-6  border border-gray-400 rounded-full p-1'>
 						<GoPeople />
 					</span>
-					<span className='border-red-100 border border-gray-700 rounded-full p-1'>
+					<span className=' border border-gray-400 rounded-full p-1'>
 						<PiHandbag />
 					</span>
 				</div>
