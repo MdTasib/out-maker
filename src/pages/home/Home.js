@@ -4,9 +4,7 @@ import Collection from "./collection";
 import Stylish from "./stylish";
 import Envoirment from "./envoirment";
 import Meterials from "./meterials";
-import Footer from "../../shared/Footer/Footer";
 import Review from "./review";
-import Services from "./services";
 
 const Home = () => {
 	return (
@@ -17,8 +15,6 @@ const Home = () => {
 			<Envoirment />
 			<Meterials />
 			<Review />
-			<Services />
-			<Footer />
 		</main>
 	);
 };

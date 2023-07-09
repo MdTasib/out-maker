@@ -1,45 +1,44 @@
-.stylish_slider {
-	position: relative;
+.stylish .react-multi-carousel-list {
+	position: initial !important;
 }
 
-.stylish .carousel-initialized {
-	padding-top: 30px !important;
-	padding-bottom: 80px !important;
-}
-
-.stylish .carousel-initialized .carousel-next {
+.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--right {
 	position: absolute !important;
 	top: 45%;
 	background-color: #002b5b;
 }
 
-.stylish .carousel-initialized .carousel-next::before {
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right::before {
 	-webkit-filter: brightness(0) invert(1);
 	filter: brightness(0) invert(1);
 }
 
-.stylish .carousel-initialized .carousel-prev {
+.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 	position: absolute !important;
 	top: 90%;
 	left: 90%;
 	background-color: #002b5b;
 }
 
-.stylish .carousel-initialized .carousel-prev::before {
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left::before {
 	-webkit-filter: brightness(0) invert(1);
 	filter: brightness(0) invert(1);
 }
 
-.stylish .carousel-initialized .carousel-prev {
+.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 	top: 90%;
 	left: 90%;
 	height: 50px;
 	width: 50px;
 	border: 1px solid #002b5b;
-	margin-left: -15px;
+	margin-left: -50px;
 }
 
-.stylish .carousel-initialized .carousel-next {
+.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--right {
 	top: 90%;
 	height: 50px;
 	width: 50px;
@@ -53,22 +52,32 @@
 	left: 0;
 }
 
-.stylish .carousel-dots li.carousel-dots-active button:before {
-	color: #002b5b !important;
+.stylish .react-multi-carousel-dot-list {
+	bottom: 3% !important;
+	right: 85% !important;
+}
+
+.stylish .react-multi-carousel-dot button {
+	border: 0;
+	background: #d9d9d9;
+}
+
+.stylish .react-multi-carousel-dot--active button {
+	background: #002b5b;
 }
 
 @media only screen and (max-width: 1040px) {
 	.stylish-devider {
 		display: none;
 	}
-	.stylish .carousel-dots {
+	.stylish .react-multi-carousel-dot button {
 		display: none !important;
 	}
 
-	.stylish .carousel-initialized .carousel-next {
+	.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--right {
 		left: 55%;
 	}
-	.stylish .carousel-initialized .carousel-prev {
+	.stylish .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 		left: 45%;
 	}
 }

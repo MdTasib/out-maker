@@ -1,7 +1,7 @@
 import React from "react";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { AiFillStar } from "react-icons/ai";
-import Slider from "infinite-react-carousel";
 import img1 from "../../assets/images/review1.png";
 import img2 from "../../assets/images/review2.png";
 import img3 from "../../assets/images/review3.png";
@@ -66,12 +66,6 @@ const reviews = [
 ];
 
 const Review = () => {
-	const settings = {
-		// autoplay: true,
-		slidesPerRow: 3,
-		wheel: true,
-	};
-
 	return (
 		<section className='container mx-auto px-10 py-20 review'>
 			<div class='flex justify-between items-center absolute'>
@@ -82,9 +76,45 @@ const Review = () => {
 				</div>
 			</div>
 
-			<Slider
-				{...settings}
-				class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+			<Carousel
+				additionalTransfrom={0}
+				arrows
+				autoPlaySpeed={3000}
+				centerMode={false}
+				className=''
+				containerClass='container-with-dots'
+				dotListClass=''
+				draggable
+				focusOnSelect={false}
+				infinite
+				itemClass=''
+				keyBoardControl
+				minimumTouchDrag={80}
+				pauseOnHover
+				renderArrowsWhenDisabled={false}
+				renderButtonGroupOutside={false}
+				renderDotsOutside={false}
+				responsive={{
+					desktop: {
+						breakpoint: { max: 5000, min: 1024 },
+						items: 3,
+					},
+					tablet: {
+						breakpoint: { max: 1024, min: 780 },
+						items: 2,
+					},
+					mobile: {
+						breakpoint: { max: 780, min: 0 },
+						items: 1,
+					},
+				}}
+				rewind={false}
+				rewindWithAnimation={false}
+				rtl={false}
+				shouldResetAutoplay
+				sliderClass=''
+				slidesToSlide={1}
+				swipeable>
 				{reviews.map(review => (
 					<div className='px-4'>
 						<div class='flex flex-col justify-between rounded-lg border border-[#F2F2F2] p-8 shadow max-w-sm mt-24 hover:border-white'>
@@ -132,7 +162,7 @@ const Review = () => {
 						</div>
 					</div>
 				))}
-			</Slider>
+			</Carousel>
 		</section>
 	);
 };

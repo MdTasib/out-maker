@@ -1,0 +1,21 @@
+.articles .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+	background-color: #002b5b;
+}
+
+.articles
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.articles .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+	background-color: #002b5b;
+}
+
+.articles
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
