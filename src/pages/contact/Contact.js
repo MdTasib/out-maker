@@ -5,6 +5,7 @@ import img1 from "../../assets/images/contact-page1.png";
 import img2 from "../../assets/images/cotact-page2.png";
 import SingleBlog from "../../shared/Blog/SingleBlog";
 import ContactFrom from "./ContactFrom";
+import ShowRooms from "./ShowRooms";
 
 const Contact = () => {
 	return (
@@ -40,6 +41,7 @@ const Contact = () => {
 			/>
 
 			<ContactFrom />
+			<ShowRooms />
 
 			<Network />
 		</main>
