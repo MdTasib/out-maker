@@ -200,7 +200,7 @@ const AllProducts = () => {
 										<input
 											type='radio'
 											name='Sectional'
-											className='radio radio-xs radio-warning'
+											className='radio radio-xs'
 											checked
 											style={{ width: "25px", height: "25px" }}
 										/>
