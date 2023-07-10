@@ -7,6 +7,8 @@ import Services from "./pages/home/services";
 import Footer from "./shared/Footer/Footer";
 import Blog from "./pages/blog/Blog";
 import Product from "./pages/product/product";
+import Contact from "./pages/contact/Contact";
+import AllBlogs from "./pages/all-blogs/AllBlogs";
 
 function App() {
 	return (
@@ -15,8 +17,10 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/collections' element={<Collections />} />
+				<Route path='/all-blogs' element={<AllBlogs />} />
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/product' element={<Product />} />
+				<Route path='/contact' element={<Contact />} />
 			</Routes>
 			<Services />
 			<Footer />

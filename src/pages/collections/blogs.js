@@ -1,9 +1,9 @@
 import React from "react";
-import SingleBlog from "./singleBlog";
 import img1 from "../../assets/images/blog1.png";
 import img2 from "../../assets/images/blog2.png";
 import img3 from "../../assets/images/blog3.png";
 import img4 from "../../assets/images/blog4.png";
+import SingleBlog from "../../shared/Blog/SingleBlog";
 
 const Blogs = () => {
 	return (
