@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillFilterCircleFill } from "react-icons/bs";
 import productImg from "../../assets/images/product-image.png";
 
@@ -33,6 +33,8 @@ const products = [
 ];
 
 const AllProducts = () => {
+	const [showModal, setShowModal] = useState(false);
+
 	return (
 		<div className='container mx-auto px-10'>
 			<nav className='py-8'>
@@ -59,7 +61,9 @@ const AllProducts = () => {
 				<p className='border-1 border text-lg font-medium rounded-full py-2 px-4 w-max border-primary'>
 					12 Products
 				</p>
-				<p className='flex w-max border items-center px-4 justify-between border-1 text-lg font-medium rounded-full py-2 border-primary cursor-pointer'>
+				<p
+					className='flex w-max border items-center px-4 justify-between border-1 text-lg font-medium rounded-full py-2 border-primary cursor-pointer'
+					onClick={() => setShowModal(true)}>
 					Filter
 					<span className='pl-4'>
 						<BsFillFilterCircleFill />
@@ -111,6 +115,104 @@ const AllProducts = () => {
 					</div>
 				))}
 			</div>
+
+			{showModal ? (
+				<>
+					<div className='justify-start items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
+						<div className='relative w-2/3 md:w-5/12 my-6 mr-auto max-w-3xl'>
+							{/*content*/}
+							<div className='border-0 rounded-r-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none p-10'>
+								<div className='flex justify-between border-b-2 border-primary mb-4'>
+									<p className='text-xl font-bold text-primary'>FILTER</p>
+									<p
+										className='font-medium text-2xl cursor-pointer'
+										onClick={() => setShowModal(false)}>
+										&#215;
+									</p>
+								</div>
+								<div className='border-b-2 border-primary mb-3'>
+									<p className='text-xl font-normal text-primary pb-2'>
+										Availability
+									</p>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='in stock'
+											className='radio radio-xs'
+											checked
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>In Stock</p>
+									</div>
+								</div>
+								<div className='border-b-2 border-primary mb-3'>
+									<p className='text-xl font-normal text-primary pb-2'>
+										Fabric Color
+									</p>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='Pacific Fog Gray'
+											className='radio radio-xs radio-warning'
+											checked
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>Pacific Fog Gray</p>
+									</div>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='Dark Pebble Gray'
+											className='radio radio-xs'
+											checked
+											disabled
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>Dark Pebble Gray</p>
+									</div>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='Black Hash Gray'
+											className='radio radio-xs'
+											checked
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>Black Hash Gray</p>
+									</div>
+								</div>
+								<div className='border-b-2 border-primary mb-3'>
+									<p className='text-xl font-normal text-primary pb-2'>
+										Product Type
+									</p>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='Sofa'
+											className='radio radio-xs'
+											checked
+											disabled
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>Sofa</p>
+									</div>
+									<div className='flex items-center pb-3'>
+										<input
+											type='radio'
+											name='Sectional'
+											className='radio radio-xs radio-warning'
+											checked
+											style={{ width: "25px", height: "25px" }}
+										/>
+										<p className='ps-2 text-xs font-normal'>Sectional</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className='opacity-25 fixed inset-0 z-40 bg-black'></div>
+				</>
+			) : null}
 		</div>
 	);
 };
