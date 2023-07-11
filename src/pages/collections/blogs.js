@@ -18,6 +18,7 @@ const Blogs = () => {
 			</div>
 
 			<SingleBlog
+				contactPage={false}
 				image={img1}
 				name='KAMA'
 				description="The cushioning concept revisited, tables with their ergonomic
