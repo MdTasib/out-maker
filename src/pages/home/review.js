@@ -69,7 +69,7 @@ const Review = () => {
 	return (
 		<section className='container mx-auto px-10 py-20 review'>
 			<div class='flex justify-between items-center absolute'>
-				<div>
+				<div className=''>
 					<h1 class='text-2xl md:text-4xl font-semibold text-primary'>
 						Our Customers Reviews
 					</h1>
