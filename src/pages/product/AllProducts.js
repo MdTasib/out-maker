@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { BsFillFilterCircleFill } from "react-icons/bs";
+import { BsArrowRight, BsFillFilterCircleFill } from "react-icons/bs";
 import productImg from "../../assets/images/product-image.png";
+import { AiFillStar } from "react-icons/ai";
+import { FaStarHalf } from "react-icons/fa";
 
 const products = [
 	{
@@ -73,7 +75,7 @@ const AllProducts = () => {
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10'>
 				{products.map(product => (
-					<div className='rounded-lg shadow-lg'>
+					<div className='rounded-lg shadow-lg relative'>
 						<div className=''>
 							<img src={productImg} alt='' />
 						</div>
@@ -111,6 +113,35 @@ const AllProducts = () => {
 								</div>
 								<p>$600</p>
 							</div>
+						</div>
+
+						<div class='absolute inset-0 bg-cover bg-center z-0'></div>
+						{/* <p class='opacity-0 hover:opacity-[1] duration-300 absolute inset-0 z-10 flex justify-start items-start top-4 left-4 text-xs text-black font-normal p-1'>
+							<AiFillStar color='' size={20} />
+							<AiFillStar color='' size={20} />
+							<AiFillStar color='' size={20} />
+							<AiFillStar color='' size={20} />
+							<FaStarHalf color='' size={20} />
+						</p>
+						<p class='opacity-0 hover:opacity-[1] duration-300 absolute inset-0 z-10 flex justify-end items-center top-1/4 right-7 text-xs text-black font-normal p-1'>
+							<p className='border-b-2 border-black flex'>
+								Shop <BsArrowRight />
+							</p>
+						</p> */}
+
+						<div className='opacity-0 hover:opacity-[1] duration-300 '>
+							<p class='absolute inset-0 z-10 flex justify-start items-start top-4 left-4 text-xs text-black font-normal p-1'>
+								<AiFillStar color='' size={20} />
+								<AiFillStar color='' size={20} />
+								<AiFillStar color='' size={20} />
+								<AiFillStar color='' size={20} />
+								<FaStarHalf color='' size={20} />
+							</p>
+							<p class='absolute inset-0 z-10 flex justify-end items-center top-1/4 right-7 text-xs text-black font-normal p-1'>
+								<p className='border-b-2 border-black flex'>
+									Shop <BsArrowRight />
+								</p>
+							</p>
 						</div>
 					</div>
 				))}
