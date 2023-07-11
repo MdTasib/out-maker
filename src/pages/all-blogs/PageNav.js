@@ -9,13 +9,23 @@ const PageNav = () => {
 					<li className='font-semibold'>Blogs</li>
 				</ul>
 			</nav>
-			<nav className='bg-gray-100 py-4'>
-				<ul className='flex justify-around text-xl text-primary font-bold'>
-					<li className='cursor-pointer'>All</li>
-					<li className='cursor-pointer'>Design Tips</li>
-					<li className='cursor-pointer'>How to</li>
-					<li className='cursor-pointer'>Room Inspiration</li>
-					<li className='cursor-pointer'>Outmaker</li>
+			<nav className=''>
+				<ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-between text-xl text-primary font-bold text-center'>
+					<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary'>
+						All
+					</li>
+					<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary'>
+						Design Tips
+					</li>
+					<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary'>
+						How to
+					</li>
+					<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary'>
+						Room Inspiration
+					</li>
+					<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary'>
+						Outmaker
+					</li>
 				</ul>
 			</nav>
 		</>
