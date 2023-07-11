@@ -22,10 +22,11 @@ const Network = () => {
 						"background-image": `url(${img1})`,
 						backgroundSize: "cover",
 					}}>
+					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-					<div class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-6xl text-white font-semibold bg-black p-4'>
-						<FaRegCopy size={50} />
-					</div>
+					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</p>
 				</div>
 				<div
 					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
@@ -33,10 +34,11 @@ const Network = () => {
 						"background-image": `url(${img2})`,
 						backgroundSize: "cover",
 					}}>
+					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-					<div class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-6xl text-white font-semibold bg-black p-4'>
-						<FaRegCopy size={50} />
-					</div>
+					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</p>
 				</div>
 				<div
 					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
@@ -44,10 +46,11 @@ const Network = () => {
 						"background-image": `url(${img3})`,
 						backgroundSize: "cover",
 					}}>
+					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-					<div class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-6xl text-white font-semibold bg-black p-4'>
-						<FaRegCopy size={50} />
-					</div>
+					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</p>
 				</div>
 				<div
 					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
@@ -55,10 +58,11 @@ const Network = () => {
 						"background-image": `url(${img4})`,
 						backgroundSize: "cover",
 					}}>
+					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-					<div class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-6xl text-white font-semibold bg-black p-4'>
-						<FaRegCopy size={50} />
-					</div>
+					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</p>
 				</div>
 				<div
 					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
@@ -66,10 +70,11 @@ const Network = () => {
 						"background-image": `url(${img5})`,
 						backgroundSize: "cover",
 					}}>
+					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-					<div class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-6xl text-white font-semibold bg-black p-4'>
-						<FaRegCopy size={50} />
-					</div>
+					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					</p>
 				</div>
 			</div>
 		</section>
