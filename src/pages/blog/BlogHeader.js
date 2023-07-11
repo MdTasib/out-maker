@@ -19,7 +19,7 @@ const BlogHeader = () => {
 				</Button>
 			</div>
 
-			<h2 className='text-center text-primary font-normal text-5xl py-10 leading-normal border-b-4 border-primary'>
+			<h2 className='text-center text-primary font-normal text-xl md:text-5xl py-10 leading-normal border-b-4 border-primary'>
 				Meet Arper’s New 2023 Collections That Inspire Beauty, Energy & Vitality
 			</h2>
 
