@@ -7,7 +7,7 @@ const Posts = () => {
 		<div>
 			<img src={img} alt='' />
 
-			<div className='px-14'>
+			<div className='px-0 md:px-14'>
 				<Post
 					id='1'
 					title='CREATE VISUAL VIGNETTES.'
