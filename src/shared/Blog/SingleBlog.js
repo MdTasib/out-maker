@@ -20,35 +20,42 @@ const SingleBlog = ({
 					{contactPage ? title : "COLLECTION"}
 				</h4>
 				<h2 className='text-5xl font-semibold text-black'>{name}</h2>
-				{!contactPage && (
+
+				{contactPage ? (
+					<div className='py-8 font-light text-lg'>
+						<p>8803 NW, 23rd StreetDoral FL 33172 </p>
+						<a href='tel:1 786 391 0274' className='block pt-4'>
+							T. +1 786 391 0274
+						</a>
+						<a href='tel:1 786 353 9108' className='block pb-4'>
+							T. +1 786 353 9108
+						</a>
+						<a
+							href='https://www.outmaker.com/us/'
+							className='block underline'
+							target='_blank'
+							rel='noreferrer'>
+							https://www.outmaker.com/us/
+						</a>
+						<a href='mailto: infousa@outmaker.com' className='block underline'>
+							infousa@outmaker.com
+						</a>
+					</div>
+				) : (
 					<p className='py-6 text-sm font-light text-black leading-6'>
 						{description}
 					</p>
 				)}
 
-				<div className='py-8 font-light text-lg'>
-					<p>8803 NW, 23rd StreetDoral FL 33172 </p>
-					<a href='tel:1 786 391 0274' className='block pt-4'>
-						T. +1 786 391 0274
-					</a>
-					<a href='tel:1 786 353 9108' className='block pb-4'>
-						T. +1 786 353 9108
-					</a>
-					<a
-						href='https://www.outmaker.com/us/'
-						className='block underline'
-						target='_blank'
-						rel='noreferrer'>
-						https://www.outmaker.com/us/
-					</a>
-					<a href='mailto: infousa@outmaker.com' className='block underline'>
-						infousa@outmaker.com
-					</a>
-				</div>
-
-				<Button className='btn btn-primary btn-outline rounded-full border-2 capitalize'>
-					View Map <PiMapPinLineFill className='ms-2' />
-				</Button>
+				{contactPage ? (
+					<Button className='btn btn-primary btn-outline rounded-full border-2 capitalize'>
+						View Map <PiMapPinLineFill className='ms-2' />
+					</Button>
+				) : (
+					<Button className='btn btn-primary btn-outline rounded-full border-2 capitalize'>
+						DISCOVER
+					</Button>
+				)}
 			</div>
 		</div>
 	);
