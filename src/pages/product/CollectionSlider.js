@@ -72,14 +72,28 @@ const CollectionSlider = () => {
 				slidesToSlide={1}
 				swipeable>
 				{collections.map(collection => (
-					<div className='p-10'>
-						<div
-							className='flex justify-center items-center flex-col h-96'
-							style={{ backgroundImage: `url(${collection.image})` }}>
-							<p className='text-xl font-light text-white'>COLLECTION</p>
-							<h4 className='text-6xl text-white font-medium'>
-								{collection.name}
-							</h4>
+					<div className='py-10 mx-2'>
+						<div className='relative text-center overflow-hidden'>
+							<img
+								src={collection.image}
+								alt=''
+								className='hover:scale-125 transition ease-in-out duration-1000'
+							/>
+
+							<div
+								className='flex flex-col absolute'
+								style={{
+									top: "40%",
+									transform: "translate(-50%, 0)",
+									left: "50%",
+								}}>
+								<p className='text-lg md:text-xl font-light text-white'>
+									COLLECTION
+								</p>
+								<h4 className='text-4xl md:text-6xl text-white font-medium'>
+									{collection.name}
+								</h4>
+							</div>
 						</div>
 					</div>
 				))}
