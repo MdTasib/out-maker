@@ -117,7 +117,7 @@ const Review = () => {
 				swipeable>
 				{reviews.map(review => (
 					<div className='px-4'>
-						<div class='flex flex-col justify-between rounded-lg border border-[#F2F2F2] p-8 shadow max-w-sm mt-24 hover:border-white'>
+						<div class='flex flex-col justify-between rounded-lg border-2 border-[#F2F2F2] p-8 shadow hover:shadow-xl max-w-sm mt-24 hover:border-white'>
 							<div className='flex justify-between items-center'>
 								<div className='flex text-white'>
 									<AiFillStar className='bg-[#F1AB3E] p-1 me-1' size={24} />

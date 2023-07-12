@@ -11,22 +11,49 @@
 .stylish
 	.react-multi-carousel-list
 	.react-multiple-carousel__arrow--right::before {
-	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(1) invert(1);
+	color: rosybrown;
+}
+
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right:hover {
+	background-color: #002b5b;
+}
+
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right:hover::before {
 	filter: brightness(0) invert(1);
+	color: rosybrown;
+}
+
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left:hover {
+	background-color: #002b5b;
+}
+
+.stylish
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left:hover::before {
+	filter: brightness(0) invert(1);
+	color: rosybrown;
 }
 
 .stylish .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 	position: absolute !important;
 	top: 90%;
 	left: 90%;
-	background-color: #002b5b;
+	background-color: #fff;
+	color: #002b5b;
 }
 
 .stylish
 	.react-multi-carousel-list
 	.react-multiple-carousel__arrow--left::before {
-	-webkit-filter: brightness(0) invert(1);
-	filter: brightness(0) invert(1);
+	filter: brightness(1) invert(1);
+	color: rosybrown;
 }
 
 .stylish .react-multi-carousel-list .react-multiple-carousel__arrow--left {
@@ -43,6 +70,7 @@
 	height: 50px;
 	width: 50px;
 	border: 1px solid #002b5b;
+	background-color: #fff;
 }
 
 .stylish .carousel-dots {

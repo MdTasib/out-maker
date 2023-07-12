@@ -38,8 +38,8 @@ const Services = () => {
 				<div class='grid justify-between grid-cols-2 row-gap-8 md:grid-cols-4 divide-x-2 divide-dashed'>
 					{services.map(service => (
 						<div className='text-center'>
-							<div className='flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12'>
-								<img src={service.image} alt='' />
+							<div className='flex items-center justify-center mx-auto mb-3 rounded-full'>
+								<img src={service.image} alt='' className='w-[90px] h-[90px]' />
 							</div>
 							<h6 className='text-lg font-semibold text-[#1D1B1B]'>
 								{service.title}

@@ -18,7 +18,7 @@ const Collection = () => {
 				</div>
 				<Link
 					to='/all'
-					className='flex items-center text-primary text-sm font-normal cursor-pointer'>
+					className='flex items-center text-primary text-sm font-semibold cursor-pointer'>
 					View All
 					<BsArrowRight className='ms-2' />
 				</Link>
@@ -38,7 +38,7 @@ const Collection = () => {
 								We are small family business in Europe who love to make
 								exceptional printed products!
 							</p>
-							<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white'>
+							<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white capitalize'>
 								Show Now <BsArrowRight className='ms-2' />
 							</Button>
 						</div>
@@ -56,7 +56,7 @@ const Collection = () => {
 							We are small family business in Europe who love to make
 							exceptional printed products!
 						</p>
-						<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white'>
+						<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white capitalize'>
 							Show Now <BsArrowRight className='ms-2' />
 						</Button>
 					</div>
