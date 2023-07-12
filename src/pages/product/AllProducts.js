@@ -64,7 +64,7 @@ const AllProducts = () => {
 					12 Products
 				</p>
 				<p
-					className='flex w-max border items-center px-4 justify-between border-1 text-lg font-medium rounded-full py-2 border-primary cursor-pointer hover:bg-primary hover:text-white'
+					className='flex w-max border items-center px-4 justify-between border-1 text-lg font-medium rounded-full py-2 border-primary cursor-pointer hover:bg-primary hover:text-white gap-x-8'
 					onClick={() => setShowModal(true)}>
 					Filter
 					<span className='pl-4'>
@@ -116,18 +116,6 @@ const AllProducts = () => {
 						</div>
 
 						<div class='absolute inset-0 bg-cover bg-center z-0'></div>
-						{/* <p class='opacity-0 hover:opacity-[1] duration-300 absolute inset-0 z-10 flex justify-start items-start top-4 left-4 text-xs text-black font-normal p-1'>
-							<AiFillStar color='' size={20} />
-							<AiFillStar color='' size={20} />
-							<AiFillStar color='' size={20} />
-							<AiFillStar color='' size={20} />
-							<FaStarHalf color='' size={20} />
-						</p>
-						<p class='opacity-0 hover:opacity-[1] duration-300 absolute inset-0 z-10 flex justify-end items-center top-1/4 right-7 text-xs text-black font-normal p-1'>
-							<p className='border-b-2 border-black flex'>
-								Shop <BsArrowRight />
-							</p>
-						</p> */}
 
 						<div className='opacity-0 hover:opacity-[1] duration-300 '>
 							<p class='absolute inset-0 z-10 flex justify-start items-start top-4 left-4 text-xs text-black font-normal p-1'>

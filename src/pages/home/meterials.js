@@ -54,10 +54,10 @@ const Meterials = () => {
 					</p>
 				</div>
 
-				<div className=''>
+				<div className='mt-10'>
 					<iframe
 						style={{ height: "600px" }}
-						className='w-full rounded-2xl pt-10'
+						className='w-full rounded-2xl'
 						src='https://www.youtube.com/embed/cHBqwj0Ed_I'
 						frameBorder={0}
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
