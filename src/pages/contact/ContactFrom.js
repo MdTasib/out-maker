@@ -63,7 +63,11 @@ const ContactFrom = () => {
 					<label className='label cursor-pointer text-sm font-normal mr-auto'>
 						<input type='checkbox' className='checkbox checkbox-primary me-4' />
 						<span className='label-text'>
-							I have read and accept the privacy policy. *
+							I have read and accept the{" "}
+							<a href='#' className='underline'>
+								privacy policy.
+							</a>
+							*
 						</span>
 					</label>
 				</div>
@@ -76,7 +80,7 @@ const ContactFrom = () => {
 					</label>
 				</div>
 
-				<Button className='btn btn-primary w-full'>SEND</Button>
+				<Button className='btn btn-primary w-full text-white'>SEND</Button>
 			</form>
 		</div>
 	);

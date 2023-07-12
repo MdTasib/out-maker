@@ -82,7 +82,7 @@ const ShowRooms = () => {
 								</a>
 							</div>
 
-							<Button className='btn btn-primary w-1/2 mx-auto btn-outline rounded-full border-2 capitalize'>
+							<Button className='btn btn-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 text-xl font-medium'>
 								View Map <PiMapPinLineFill className='ms-2' />
 							</Button>
 						</div>
