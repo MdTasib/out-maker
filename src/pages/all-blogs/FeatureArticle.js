@@ -13,7 +13,7 @@ const FeatureArticle = () => {
 					<h2 className='text-xl md:text-3xl font-semibold text-black'>
 						How to Furnish Your Small Outdoor Space{" "}
 					</h2>
-					<p className='text-sm md:text-base font-light text-black'>
+					<p className='text-sm md:text-base font-light text-black py-4'>
 						En an unknown printer took a galley of type and scrambled it to make
 						a type specimen book. It has survived not only five centuries, but
 						also the leap into electronic typesetting
