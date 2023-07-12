@@ -6,10 +6,11 @@ import img2 from "../../assets/images/cotact-page2.png";
 import SingleBlog from "../../shared/Blog/SingleBlog";
 import ContactFrom from "./ContactFrom";
 import ShowRooms from "./ShowRooms";
+import mic from "../../assets/images/mic.png";
 
 const Contact = () => {
 	return (
-		<main className='container mx-auto px-10'>
+		<main className='container mx-auto px-10 relative'>
 			<PageNav />
 			<div className='text-center pt-20'>
 				<h2 className='text-4xl font-semibold text-black'>Contact</h2>
@@ -44,6 +45,10 @@ const Contact = () => {
 			<ShowRooms />
 
 			<Network />
+
+			<div className='absolute right-0 bottom-[0px]'>
+				<img src={mic} alt='' />
+			</div>
 		</main>
 	);
 };

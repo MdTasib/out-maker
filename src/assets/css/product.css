@@ -1,0 +1,15 @@
+.product-collection
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right {
+	position: absolute !important;
+	top: 50%;
+	right: 0%;
+}
+
+.product-collection
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left {
+	position: absolute !important;
+	top: 50%;
+	left: 0%;
+}
