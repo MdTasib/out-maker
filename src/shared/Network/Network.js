@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegCopy } from "react-icons/fa";
+import { BsFillPlayFill } from "react-icons/bs";
 import img1 from "../../assets/images/network1.png";
 import img2 from "../../assets/images/network2.png";
 import img3 from "../../assets/images/network3.png";
@@ -22,7 +23,11 @@ const Network = () => {
 						"background-image": `url(${img1})`,
 						backgroundSize: "cover",
 					}}>
-					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
+					<BsFillPlayFill
+						size={50}
+						className='mx-auto w-10 mt-[100px] p-1'
+						color='white'
+					/>
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
 					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -34,7 +39,7 @@ const Network = () => {
 						"background-image": `url(${img2})`,
 						backgroundSize: "cover",
 					}}>
-					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
+					{/* <FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' /> */}
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
 					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -58,7 +63,7 @@ const Network = () => {
 						"background-image": `url(${img4})`,
 						backgroundSize: "cover",
 					}}>
-					<FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' />
+					{/* <FaRegCopy size={50} className='ml-auto w-8 p-1' color='white' /> */}
 					<div class='absolute inset-0 bg-cover bg-center z-0'></div>
 					<p class='opacity-0 hover:opacity-[0.5] duration-300 absolute inset-0 z-10 flex justify-end items-start text-xs text-white font-normal bg-black p-1'>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit.

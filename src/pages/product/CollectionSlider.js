@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import img1 from "../../assets/images/product-collection.png";
 import img2 from "../../assets/images/product-collection2.png";
 import Network from "../../shared/Network/Network";
+import "../../assets/css/product.css";
 
 const collections = [
 	{
@@ -25,7 +26,7 @@ const collections = [
 
 const CollectionSlider = () => {
 	return (
-		<section className='container px-10 mx-auto pb-10'>
+		<section className='container px-10 mx-auto pb-10 relative product-collection'>
 			<div className='text-left border-b-4 border-primary'>
 				<h2 className='text-primary text-3xl font-bold pb-3'>
 					Other Collections
