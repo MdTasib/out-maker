@@ -11,7 +11,9 @@ const Navbar = () => {
 			<NavbarTop />
 
 			{/* main menu */}
-			<div className='shadow'>
+			<div
+				className='relative z-10'
+				style={{ boxShadow: "0px 6px 20px 0px white" }}>
 				<div className='container mx-auto px-10 py-6 md:py-0 navbar relative flex flex-col md:flex-row justify-between items-center'>
 					<div className='navbar-start hidden lg:flex'>
 						<div class='text-[#363434] text-sm order-3 w-full md:w-auto md:order-2'>
@@ -67,7 +69,9 @@ const Navbar = () => {
 							</ul>
 						</div>
 					</div>
-					<div class='hidden lg:absolute top-[5%] left-1/2 -translate-x-1/2  bg-white w-[100px] h-[100px] lg:flex justify-center items-center rounded-full'>
+					<div
+						class='hidden lg:absolute top-[5%] left-1/2 -translate-x-1/2  bg-white w-[100px] h-[100px] lg:flex justify-center items-center rounded-full'
+						style={{ boxShadow: "0px 6px 20px 0px white" }}>
 						<div class=''>
 							<img src={logo} alt='' className='' />
 						</div>
