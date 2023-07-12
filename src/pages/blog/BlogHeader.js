@@ -11,10 +11,10 @@ const BlogHeader = () => {
 	return (
 		<header className='py-10'>
 			<div className='flex justify-center gap-24'>
-				<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white border-2 px-6'>
+				<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white border-2 px-8 md:px-12'>
 					OUTDOOM
 				</Button>
-				<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white border-2 px-10'>
+				<Button className='btn btn-primary rounded-full text-white hover:text-primary hover:bg-white border-2 px-10 md:px-16'>
 					LIVING
 				</Button>
 			</div>

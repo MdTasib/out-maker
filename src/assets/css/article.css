@@ -19,3 +19,15 @@
 	-webkit-filter: brightness(0) invert(1);
 	filter: brightness(0) invert(1);
 }
+
+.articles .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+	position: absolute !important;
+	top: 30%;
+	right: 0%;
+}
+
+.articles .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+	position: absolute !important;
+	top: 30%;
+	left: 0%;
+}
