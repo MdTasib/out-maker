@@ -2,6 +2,7 @@ import React from "react";
 import AllBlogsHeader from "./AllBlogsHeader";
 import PageNav from "./PageNav";
 import FeatureArticle from "./FeatureArticle";
+import LatestArticle from "./LatestArticle";
 
 const AllBlogs = () => {
 	return (
@@ -10,6 +11,7 @@ const AllBlogs = () => {
 			<div className='container px-10 mx-auto'>
 				<PageNav />
 				<FeatureArticle />
+				<LatestArticle />
 			</div>
 		</main>
 	);
