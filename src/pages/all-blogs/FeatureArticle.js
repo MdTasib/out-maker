@@ -1,10 +1,43 @@
 import React from "react";
 import feateImageLg from "../../assets/images/article-lg.png";
 import articleUser1 from "../../assets/images/article-user-1.png";
+import articleUser2 from "../../assets/images/article-user-2.png";
+import articleUser3 from "../../assets/images/article-user-3.png";
+import article1 from "../../assets/images/feature-article-1.png";
+import article2 from "../../assets/images/feature-article-2.png";
+import article3 from "../../assets/images/feature-article-3.png";
+
+const articles = [
+	{
+		id: 1,
+		title: "How to Furnish Your Small Outdoor Space for your Garden",
+		image: article1,
+		user: articleUser1,
+		userName: "Ben Holland",
+		date: "11/10/2019",
+	},
+	{
+		id: 2,
+		title: "Enchanting 200-Year-Old Walled Garden in Pennsylvania",
+		image: article2,
+		user: articleUser2,
+		userName: "Mary Cury",
+		date: "11/10/2020",
+	},
+	{
+		id: 3,
+		title:
+			"SEE THIS HOUSE: Architect’s New Orleans Home in the Garden District",
+		image: article3,
+		user: articleUser3,
+		userName: "Emily",
+		date: "11/10/2023",
+	},
+];
 
 const FeatureArticle = () => {
 	return (
-		<section className='block md:flex justify-between items-center pb-10'>
+		<section className='block md:flex justify-between pb-10 gap-6'>
 			<div className='basis-1/2 bg-gray-100'>
 				<figure>
 					<img src={feateImageLg} alt='Shoes' />
@@ -27,7 +60,34 @@ const FeatureArticle = () => {
 					</div>
 				</div>
 			</div>
-			<div className='basis-1/2'></div>
+
+			<div className='basis-1/2 pt-8 md:pt-0'>
+				<h4 className='text-3xl font-bold text-primary border-b-4 border-primary'>
+					Featured Articles
+				</h4>
+
+				{articles.map(article => (
+					<div className='flex justify-between border-b-4 border-[#B8B8B8] py-4'>
+						<div className='basis-2/3'>
+							<h5 className='text-base md:text-xl font-medium text-black'>
+								{article.title}
+							</h5>
+
+							<div className='flex items-center gap-3 text-sm md:text-base text-[#213343] font-normal pt-3'>
+								<div className='flex items-center gap-2'>
+									<img src={article.user} alt='' className='w-10' />
+									<span className=''>{article.userName}</span>
+								</div>
+								<div className='divider bg-[#213343] w-[2px] h-4'></div>
+								<span>{article.date}</span>
+							</div>
+						</div>
+						<div className='basis-1/3 pl-2 md:pl-0'>
+							<img src={article.image} alt='' className='w-full h-full' />
+						</div>
+					</div>
+				))}
+			</div>
 		</section>
 	);
 };
