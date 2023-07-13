@@ -3,6 +3,7 @@ import AllBlogsHeader from "./AllBlogsHeader";
 import PageNav from "./PageNav";
 import FeatureArticle from "./FeatureArticle";
 import LatestArticle from "./LatestArticle";
+import Ideas from "./Ideas";
 
 const AllBlogs = () => {
 	return (
@@ -12,6 +13,7 @@ const AllBlogs = () => {
 				<PageNav />
 				<FeatureArticle />
 				<LatestArticle />
+				<Ideas />
 			</div>
 		</main>
 	);
