@@ -4,6 +4,8 @@ import PageNav from "./PageNav";
 import FeatureArticle from "./FeatureArticle";
 import LatestArticle from "./LatestArticle";
 import Ideas from "./Ideas";
+import Network from "../../shared/Network/Network";
+import Video from "./Video";
 
 const AllBlogs = () => {
 	return (
@@ -14,6 +16,8 @@ const AllBlogs = () => {
 				<FeatureArticle />
 				<LatestArticle />
 				<Ideas />
+				<Video />
+				<Network />
 			</div>
 		</main>
 	);
