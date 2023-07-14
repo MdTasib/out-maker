@@ -1,0 +1,62 @@
+.details-slider .react-multi-carousel-list {
+	position: initial !important;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right {
+	position: absolute !important;
+	background-color: #7e93ab;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left {
+	position: absolute !important;
+	background-color: #7e93ab;
+	left: -1%;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right:hover {
+	background-color: #002b5b;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left:hover {
+	background-color: #002b5b;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left::before {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left {
+	left: -1%;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #7e93ab;
+}
+
+.details-slider
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right {
+	height: 40px;
+	width: 40px;
+	border: 1px solid #7e93ab;
+	right: -1%;
+}
