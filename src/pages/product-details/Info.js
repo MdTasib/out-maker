@@ -4,10 +4,16 @@ import color2 from "../../assets/images/black.png";
 import color3 from "../../assets/images/white.png";
 import color4 from "../../assets/images/charcoal.png";
 import { BsInfoCircle, BsHandbagFill } from "react-icons/bs";
+import {
+	SlSocialTwitter,
+	SlSocialInstagram,
+	SlSocialLinkedin,
+	SlSocialFacebook,
+} from "react-icons/sl";
 
-const Info = () => {
+const Info = ({ category, changeCategory }) => {
 	return (
-		<section className='bg-[#F3F7FF] py-16'>
+		<section className='bg-[#F3F7FF] pt-16'>
 			<div className='container mx-auto px-10'>
 				<div className='flex items-center'>
 					<h4 className='text-primary uppercase text-base md:text-4xl font-semibold'>
@@ -127,6 +133,56 @@ const Info = () => {
 							<BsHandbagFill className='' /> Add to cart- $5,349
 						</p>
 					</button>
+				</div>
+
+				<div className='block lg:flex items-center gap-8'>
+					<nav className='pt-8'>
+						<ul className='block md:flex justify-between text-sm md:text-base text-primary font-normal text-center'>
+							<li
+								onClick={() => changeCategory("details")}
+								className={`cursor-pointer ${
+									category === "details"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
+								Product details
+							</li>
+							<li
+								onClick={() => changeCategory("dimension")}
+								className={`cursor-pointer ${
+									category === "dimension"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
+								Dimensions
+							</li>
+							<li
+								onClick={() => changeCategory("warranty")}
+								className={`cursor-pointer ${
+									category === "warranty"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
+								Warranty
+							</li>
+						</ul>
+					</nav>
+
+					<div className='flex items-center gap-4 text-primary pt-4 pb-4 md:pb-0'>
+						<p>Share On:</p>
+						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+							<SlSocialFacebook />
+						</div>
+						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+							<SlSocialTwitter />
+						</div>
+						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+							<SlSocialLinkedin />
+						</div>
+						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+							<SlSocialInstagram />
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
