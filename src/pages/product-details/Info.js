@@ -150,7 +150,7 @@ const Info = () => {
 						</ul>
 					</nav>
 
-					<div className='flex items-center gap-4 text-primary pt-4'>
+					<div className='flex items-center gap-4 text-primary pt-4 pb-4 md:pb-0'>
 						<p>Share On:</p>
 						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
 							<SlSocialFacebook />
