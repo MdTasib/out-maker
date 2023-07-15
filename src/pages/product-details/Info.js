@@ -11,7 +11,7 @@ import {
 	SlSocialFacebook,
 } from "react-icons/sl";
 
-const Info = () => {
+const Info = ({ category, changeCategory }) => {
 	return (
 		<section className='bg-[#F3F7FF] pt-16'>
 			<div className='container mx-auto px-10'>
@@ -138,13 +138,31 @@ const Info = () => {
 				<div className='block lg:flex items-center gap-8'>
 					<nav className='pt-8'>
 						<ul className='block md:flex justify-between text-sm md:text-base text-primary font-normal text-center'>
-							<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]'>
+							<li
+								onClick={() => changeCategory("details")}
+								className={`cursor-pointer ${
+									category === "details"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
 								Product details
 							</li>
-							<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]'>
+							<li
+								onClick={() => changeCategory("dimension")}
+								className={`cursor-pointer ${
+									category === "dimension"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
 								Dimensions
 							</li>
-							<li className='cursor-pointer bg-gray-100 hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]'>
+							<li
+								onClick={() => changeCategory("warranty")}
+								className={`cursor-pointer ${
+									category === "warranty"
+										? "bg-primary text-white"
+										: "bg-gray-100"
+								} hover:text-white py-4 hover:bg-primary px-10 shadow shadow-[#CECECE]`}>
 								Warranty
 							</li>
 						</ul>
