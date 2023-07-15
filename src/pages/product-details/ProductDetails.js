@@ -3,6 +3,7 @@ import DetailsSlider from "./DetailsSlider";
 import Info from "./Info";
 import Details from "./Details";
 import Dimensions from "./Dimensions";
+import Warranty from "./Warranty";
 
 const ProductDetails = () => {
 	return (
@@ -10,7 +11,8 @@ const ProductDetails = () => {
 			<DetailsSlider />
 			<Info />
 			{/* <Details /> */}
-			<Dimensions />
+			{/* <Dimensions /> */}
+			<Warranty />
 		</main>
 	);
 };

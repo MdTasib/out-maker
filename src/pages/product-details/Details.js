@@ -26,11 +26,11 @@ const Details = () => {
 			<h5 className='text-xl font-semibold text-primary pt-8'>
 				THIS SET INCLUDES
 			</h5>
-			<ul className='list-disc flex gap-10 text-primary pl-4 pt-1'>
+			<ul className='list-disc block md:flex gap-10 text-primary pl-4 pt-1'>
 				<li>Right Arm</li>
-				<li>Right Arm</li>
-				<li>Right Arm</li>
-				<li>Right Arm</li>
+				<li>Left Arm</li>
+				<li>Armless Inserts</li>
+				<li>90° or 45° Corner</li>
 			</ul>
 		</section>
 	);
