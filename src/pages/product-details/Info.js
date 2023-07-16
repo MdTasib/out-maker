@@ -170,16 +170,16 @@ const Info = ({ category, changeCategory }) => {
 
 					<div className='flex items-center gap-4 text-primary pt-4 pb-4 md:pb-0'>
 						<p>Share On:</p>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialFacebook />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialTwitter />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialLinkedin />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialInstagram />
 						</div>
 					</div>
