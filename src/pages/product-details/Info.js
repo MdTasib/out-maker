@@ -122,13 +122,13 @@ const Info = ({ category, changeCategory }) => {
 				</div>
 
 				<div className='py-8'>
-					<button className='btn btn-outline bg-white hover:bg-primary text-primary rounded-full hover:text-white w-[400px] text-sm font-normal'>
+					<button className='btn btn-outline bg-white hover:bg-primary text-primary rounded-full hover:text-white w-[300px] md:w-[400px] text-sm font-normal'>
 						<p className='flex gap-2 items-center'>
 							<BsInfoCircle /> In stock - Ships within Two Weeks
 						</p>
 					</button>{" "}
 					<br />
-					<button className='bg-primary hover:bg-white text-white hover:text-primary rounded-full w-[400px] btn btn-outline justify-start text-sm font-normal mt-6'>
+					<button className='bg-primary hover:bg-white text-white hover:text-primary rounded-full w-[300px] md:w-[400px] btn btn-outline justify-start text-sm font-normal mt-6'>
 						<p className='flex gap-2 items-center'>
 							<BsHandbagFill className='' /> Add to cart- $5,349
 						</p>

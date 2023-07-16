@@ -5,6 +5,7 @@ import Details from "./Details";
 import Dimensions from "./Dimensions";
 import Warranty from "./Warranty";
 import Weather from "./Weather";
+import Furniture from "./Furniture";
 
 const ProductDetails = () => {
 	const [category, setCategory] = useState("details");
@@ -18,6 +19,7 @@ const ProductDetails = () => {
 			{category === "dimension" && <Dimensions />}
 			{category === "warranty" && <Warranty />}
 			<Weather />
+			<Furniture />
 		</main>
 	);
 };
