@@ -24,27 +24,27 @@ const Pagination = () => {
 				</a>
 				<a
 					href='#'
-					class='px-4 py-2 bg-[#F5F6FF] hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
+					class='px-2 md:px-4 py-2 bg-[#F5F6FF] hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					1
 				</a>
 				<a
 					href='#'
-					class='px-4 py-2 border-r-2 border-[#F5F6FF] text-primary text-sm'>
+					class='px-2 md:px-4 py-2 border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					2
 				</a>
 				<a
 					href='#'
-					class='px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
+					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					3
 				</a>
 				<a
 					href='#'
-					class='px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
+					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					...
 				</a>
 				<a
 					href='#'
-					class='px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
+					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					20
 				</a>
 				<a href='#' class='p-2 ml-4 hover:bg-[#F5F6FF] flex text-primary'>

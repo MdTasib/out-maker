@@ -12,6 +12,7 @@ import {
 	SlSocialTwitter,
 } from "react-icons/sl";
 import { BiLike, BiDislike } from "react-icons/bi";
+import Pagination from "../../shared/Pagination/Pagination";
 
 const reviews = [
 	{
@@ -136,6 +137,10 @@ const Review = () => {
 					</div>
 				</div>
 			))}
+
+			<div className='py-10'>
+				<Pagination />
+			</div>
 		</section>
 	);
 };

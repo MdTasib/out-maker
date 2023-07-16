@@ -1,7 +1,7 @@
 import React from "react";
 import { PiNotePencilBold } from "react-icons/pi";
 import Review from "./Review";
-import Pagination from "../../shared/Pagination/Pagination";
+import Question from "./Question";
 
 const Buyer = () => {
 	return (
@@ -26,10 +26,7 @@ const Buyer = () => {
 			</div>
 
 			<Review />
-
-			<div className='py-10'>
-				<Pagination />
-			</div>
+			{/* <Question /> */}
 		</div>
 	);
 };
