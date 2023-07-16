@@ -39,8 +39,10 @@ const Buyer = () => {
 				</button>
 			</div>
 
-			{value === "review" && <Review />}
-			{value === "question" && <Question />}
+			<div className='pe-0 lg:pe-20'>
+				{value === "review" && <Review />}
+				{value === "question" && <Question />}
+			</div>
 		</div>
 	);
 };
