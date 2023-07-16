@@ -122,13 +122,13 @@ const Info = ({ category, changeCategory }) => {
 				</div>
 
 				<div className='py-8'>
-					<button className='btn btn-outline bg-white hover:bg-primary text-primary rounded-full hover:text-white w-[400px] text-sm font-normal'>
+					<button className='btn btn-outline bg-white hover:bg-primary text-primary rounded-full hover:text-white w-[300px] md:w-[400px] text-sm font-normal'>
 						<p className='flex gap-2 items-center'>
 							<BsInfoCircle /> In stock - Ships within Two Weeks
 						</p>
 					</button>{" "}
 					<br />
-					<button className='bg-primary hover:bg-white text-white hover:text-primary rounded-full w-[400px] btn btn-outline justify-start text-sm font-normal mt-6'>
+					<button className='bg-primary hover:bg-white text-white hover:text-primary rounded-full w-[300px] md:w-[400px] btn btn-outline justify-start text-sm font-normal mt-6'>
 						<p className='flex gap-2 items-center'>
 							<BsHandbagFill className='' /> Add to cart- $5,349
 						</p>
@@ -170,16 +170,16 @@ const Info = ({ category, changeCategory }) => {
 
 					<div className='flex items-center gap-4 text-primary pt-4 pb-4 md:pb-0'>
 						<p>Share On:</p>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialFacebook />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialTwitter />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialLinkedin />
 						</div>
-						<div className='border-primary rounded-full w-9 h-9 border-2 p-2'>
+						<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 							<SlSocialInstagram />
 						</div>
 					</div>
