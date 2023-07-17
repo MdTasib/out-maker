@@ -1,10 +1,12 @@
-import React from "react";
-import slider1 from "../../assets/images/details-slider1.png";
-import slider2 from "../../assets/images/details-slider2.png";
-import slider3 from "../../assets/images/details-slider3.png";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "../../assets/css/details.css";
+import React, { useState } from "react";
+import Slider from "react-slick";
+import slider1 from "../../assets/images/furniture-slider1.png";
+import slider2 from "../../assets/images/furniture-slider2.png";
+import slider3 from "../../assets/images/furniture-slider3.png";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import "../../assets/css/furniture.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const sliders = [
 	{
@@ -21,7 +23,40 @@ const sliders = [
 	},
 ];
 
+const images = [slider1, slider2, slider3, slider1];
+
 const Furniture = () => {
+	const NextArrow = ({ onClick }) => {
+		return (
+			<div className='arrow next' onClick={onClick}>
+				<FaArrowRight />
+			</div>
+		);
+	};
+
+	const PrevArrow = ({ onClick }) => {
+		return (
+			<div className='arrow prev' onClick={onClick}>
+				<FaArrowLeft />
+			</div>
+		);
+	};
+
+	const [imageIndex, setImageIndex] = useState(0);
+
+	const settings = {
+		infinite: true,
+		lazyLoad: true,
+		speed: 300,
+		dots: true,
+		slidesToShow: 3,
+		centerMode: true,
+		centerPadding: 0,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
+		beforeChange: (current, next) => setImageIndex(next),
+	};
+
 	return (
 		<section
 			className='py-20'
@@ -33,54 +68,15 @@ const Furniture = () => {
 				<h2 className='text-primary text-xl md:text-4xl font-semibold text-center'>
 					Outdoor furniture that fits your space
 				</h2>
-				<div className='details-slider relative'>
-					<Carousel
-						additionalTransfrom={0}
-						arrows
-						autoPlaySpeed={3000}
-						centerMode={false}
-						className=''
-						containerClass='container-with-dots'
-						dotListClass=''
-						draggable
-						focusOnSelect={false}
-						infinite
-						itemClass=''
-						keyBoardControl
-						minimumTouchDrag={80}
-						pauseOnHover
-						renderArrowsWhenDisabled={false}
-						renderButtonGroupOutside={false}
-						renderDotsOutside={false}
-						responsive={{
-							desktop: {
-								breakpoint: { max: 5000, min: 1024 },
-								items: 3,
-							},
-							tablet: {
-								breakpoint: { max: 1024, min: 780 },
-								items: 2,
-							},
-							mobile: {
-								breakpoint: { max: 780, min: 0 },
-								items: 1,
-							},
-						}}
-						rewind={false}
-						rewindWithAnimation={false}
-						rtl={false}
-						shouldResetAutoplay
-						sliderClass=''
-						slidesToSlide={1}
-						swipeable>
-						{sliders.map(slider => (
-							<div className=''>
-								{/* <div className='bg-white mx-auto flex justify-center items-center w-[200px] h-[150px] rounded'> */}
-								<img src={slider.image} alt='' className='p-8' />
-								{/* </div> */}
+				<div className='furniture-slider py-10'>
+					<Slider {...settings}>
+						{images.map((img, idx) => (
+							<div
+								className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+								<img src={img} alt={img} />
 							</div>
 						))}
-					</Carousel>
+					</Slider>
 				</div>
 			</div>
 		</section>
