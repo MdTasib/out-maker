@@ -1,11 +1,11 @@
 import React from "react";
 import sofa from "../../assets/images/cutter-sufa.png";
-import slider1 from "../../assets/images/details-slider1.png";
-import slider2 from "../../assets/images/details-slider2.png";
-import slider3 from "../../assets/images/details-slider3.png";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "../../assets/css/details.css";
+import slider1 from "../../assets/images/furniture-slider1.png";
+import slider2 from "../../assets/images/furniture-slider2.png";
+import slider3 from "../../assets/images/furniture-slider3.png";
+import weatherSlider from "../../assets/images/weather-slider.png";
+import "../../assets/css/weather.css";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const sliders = [
 	{
@@ -34,54 +34,56 @@ const Weather = () => {
 				</p>
 			</div>
 
-			<div className='details-slider relative'>
-				<Carousel
-					additionalTransfrom={0}
-					arrows
-					autoPlaySpeed={3000}
-					centerMode={false}
-					className=''
-					containerClass='container-with-dots'
-					dotListClass=''
-					draggable
-					focusOnSelect={false}
-					infinite
-					itemClass=''
-					keyBoardControl
-					minimumTouchDrag={80}
-					pauseOnHover
-					renderArrowsWhenDisabled={false}
-					renderButtonGroupOutside={false}
-					renderDotsOutside={false}
-					responsive={{
-						desktop: {
-							breakpoint: { max: 5000, min: 1024 },
-							items: 3,
-						},
-						tablet: {
-							breakpoint: { max: 1024, min: 780 },
-							items: 2,
-						},
-						mobile: {
-							breakpoint: { max: 780, min: 0 },
-							items: 1,
-						},
-					}}
-					rewind={false}
-					rewindWithAnimation={false}
-					rtl={false}
-					shouldResetAutoplay
-					sliderClass=''
-					slidesToSlide={1}
-					swipeable>
-					{sliders.map(slider => (
+			<div className='weather-slider pb-20'>
+				<div className='grid grid-cols-1 md:grid-cols-2 items-center gap-2'>
+					<div className='grid grid-cols-3 gap-2'>
 						<div className=''>
-							{/* <div className='bg-white mx-auto flex justify-center items-center w-[200px] h-[150px] rounded'> */}
-							<img src={slider.image} alt='' className='p-8' />
-							{/* </div> */}
+							<img
+								src={slider1}
+								alt=''
+								className='h-[70vh] object-cover rounded'
+							/>
 						</div>
-					))}
-				</Carousel>
+						<div className=''>
+							<img
+								src={slider2}
+								alt=''
+								className='h-[70vh] object-cover rounded'
+							/>
+						</div>
+						<div className=''>
+							<img
+								src={slider3}
+								alt=''
+								className='h-[70vh] object-cover rounded'
+							/>
+						</div>
+					</div>
+					<div className=''>
+						<img
+							src={weatherSlider}
+							alt=''
+							className='h-[70vh] object-cover rounded'
+						/>
+					</div>
+				</div>
+
+				<div class='flex justify-between items-center pt-10'>
+					<div className='flex gap-2'>
+						<div className='bg-[#D9D9D9] h-1 w-1 rounded-full'></div>
+						<div className='bg-primary h-1 w-2 rounded-full'></div>
+						<div className='bg-[#D9D9D9] h-1 w-1 rounded-full'></div>
+					</div>
+					<div className='bg-[#d5dfff] h-[2px] w-full mx-10'></div>
+					<div className='flex gap-4'>
+						<div className='bg-white border-[1px] rounded-full border-primary p-2 text-primary hover:text-white hover:bg-primary cursor-pointer'>
+							<AiOutlineArrowLeft className='' />
+						</div>
+						<div className='bg-white border-[1px] rounded-full border-primary p-2 text-primary hover:text-white hover:bg-primary cursor-pointer'>
+							<AiOutlineArrowRight className='' />
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
