@@ -8,21 +8,6 @@ import "../../assets/css/furniture.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const sliders = [
-	{
-		id: 1,
-		image: slider1,
-	},
-	{
-		id: 2,
-		image: slider2,
-	},
-	{
-		id: 3,
-		image: slider3,
-	},
-];
-
 const images = [slider1, slider2, slider3, slider1];
 
 const Furniture = () => {
