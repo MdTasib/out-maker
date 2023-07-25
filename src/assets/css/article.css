@@ -22,12 +22,14 @@
 
 .articles .react-multi-carousel-list .react-multiple-carousel__arrow--right {
 	position: absolute !important;
-	top: 30%;
-	right: 0%;
+	top: 37%;
+	transform: translate(-50%, -50%);
+	right: -1%;
 }
 
 .articles .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 	position: absolute !important;
-	top: 30%;
-	left: 0%;
+	top: 37%;
+	transform: translate(-50%, -50%);
+	left: 2%;
 }

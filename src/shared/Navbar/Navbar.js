@@ -14,7 +14,7 @@ const Navbar = () => {
 			<div
 				className='relative z-10'
 				style={{ boxShadow: "rgb(237 235 235 / 69%) 0px 6px 20px 0px" }}>
-				<div className='container mx-auto px-10 py-6 md:py-0 navbar relative flex flex-col md:flex-row justify-between items-center'>
+				<div className='container mx-auto px-10 py-6 md:py-0 navbar relative flex  justify-between items-center'>
 					<div className='navbar-start hidden lg:flex'>
 						<div class='text-[#363434] text-sm order-3 w-full md:w-auto md:order-2'>
 							<ul class='flex font-normal justify-between'>
@@ -77,8 +77,8 @@ const Navbar = () => {
 						</div>
 					</div>
 
-					<div className='pe-5 '>
-						<div className='relative text-[#AAA9AA] me-6'>
+					<div className='pe-0 md:pe-5'>
+						<div className='relative text-[#AAA9AA] me-0 md:me-6'>
 							<input
 								type='search'
 								name='serch'
