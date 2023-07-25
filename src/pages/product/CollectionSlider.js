@@ -73,7 +73,7 @@ const CollectionSlider = () => {
 				slidesToSlide={1}
 				swipeable>
 				{collections.map(collection => (
-					<div className='py-10 mx-2'>
+					<div className='py-10 mx-6'>
 						<div className='relative text-center overflow-hidden'>
 							<img
 								src={collection.image}
