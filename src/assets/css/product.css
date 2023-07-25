@@ -3,7 +3,7 @@
 	.react-multiple-carousel__arrow--right {
 	position: absolute !important;
 	top: 50%;
-	right: 0%;
+	right: -1%;
 }
 
 .product-collection
@@ -11,5 +11,22 @@
 	.react-multiple-carousel__arrow--left {
 	position: absolute !important;
 	top: 50%;
-	left: 0%;
+	left: -1%;
+}
+
+.react-multiple-carousel__arrow::before {
+	color: black;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.product-collection
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--left {
+	background: none;
+}
+.product-collection
+	.react-multi-carousel-list
+	.react-multiple-carousel__arrow--right {
+	background: none;
 }

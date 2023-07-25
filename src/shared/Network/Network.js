@@ -16,9 +16,9 @@ const Network = () => {
 				</h2>
 			</div>
 
-			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 mt-8 gap-4'>
+			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 mt-8 gap-1'>
 				<div
-					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
+					class='w-100  h-52 relative mb-4 lg:mb-0'
 					style={{
 						"background-image": `url(${img1})`,
 						backgroundSize: "cover",
@@ -34,7 +34,7 @@ const Network = () => {
 					</p>
 				</div>
 				<div
-					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
+					class='w-100  h-52 relative mb-4 lg:mb-0'
 					style={{
 						"background-image": `url(${img2})`,
 						backgroundSize: "cover",
@@ -46,7 +46,7 @@ const Network = () => {
 					</p>
 				</div>
 				<div
-					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
+					class='w-100  h-52 relative mb-4 lg:mb-0'
 					style={{
 						"background-image": `url(${img3})`,
 						backgroundSize: "cover",
@@ -58,7 +58,7 @@ const Network = () => {
 					</p>
 				</div>
 				<div
-					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
+					class='w-100  h-52 relative mb-4 lg:mb-0'
 					style={{
 						"background-image": `url(${img4})`,
 						backgroundSize: "cover",
@@ -70,7 +70,7 @@ const Network = () => {
 					</p>
 				</div>
 				<div
-					class='w-100 md:w-48 h-52 relative mb-4 lg:mb-0'
+					class='w-100  h-52 relative mb-4 lg:mb-0'
 					style={{
 						"background-image": `url(${img5})`,
 						backgroundSize: "cover",

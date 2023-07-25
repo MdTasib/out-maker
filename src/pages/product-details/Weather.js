@@ -65,8 +65,6 @@ const Weather = () => {
 		}
 	};
 
-	console.log(firstSlide, secondSlide, lastSlide, indexNumber);
-
 	return (
 		<section className='container px-10 mx-auto'>
 			<div className='header'>
@@ -105,6 +103,7 @@ const Weather = () => {
 					</div>
 					<div className=''>
 						<img
+							style={{ transition: "transform 300ms" }}
 							src={sliders[indexNumber]}
 							alt=''
 							className='h-[70vh] object-cover rounded'
