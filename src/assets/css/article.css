@@ -1,5 +1,8 @@
 .articles .react-multi-carousel-list .react-multiple-carousel__arrow--right {
 	background-color: #002b5b;
+	font-weight: 100;
+	width: 55px;
+	height: 55px;
 }
 
 .articles
@@ -11,6 +14,9 @@
 
 .articles .react-multi-carousel-list .react-multiple-carousel__arrow--left {
 	background-color: #002b5b;
+	font-weight: 100;
+	width: 55px;
+	height: 55px;
 }
 
 .articles
@@ -31,5 +37,5 @@
 	position: absolute !important;
 	top: 37%;
 	transform: translate(-50%, -50%);
-	left: 2%;
+	left: 3%;
 }
