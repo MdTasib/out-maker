@@ -75,8 +75,8 @@ const Articels = () => {
 				slidesToSlide={1}
 				swipeable>
 				{articles.map(articel => (
-					<div className='px-2 relative'>
-						<div className='border-b-4 border-[#B8B8B8] my-10'>
+					<div className='relative'>
+						<div className='border-b-4 border-[#B8B8B8] my-10 mx-2'>
 							<img src={articel.image} alt='' />
 							<div className='h-36'>
 								<h4 className='text-3xl font-semibold text-black pt-2'>
