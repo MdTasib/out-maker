@@ -39,9 +39,9 @@ const services = [
 
 const Stylish = () => {
 	return (
-		<section className='container mx-auto px-10 py-20 relative stylish'>
+		<section className='container mx-auto  px-2 md:px-10 pt-10 pb-20 relative stylish'>
 			<div className='text-center pb-4'>
-				<h2 className='text-primary font-semibold text-4xl'>
+				<h2 className='text-primary font-semibold text-2xl md:text-4xl'>
 					Pick Something Stylish
 				</h2>
 				<p className='text-[#513f3f] text-sm font-normal leading-10'>

@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 
 const Collection = () => {
 	return (
-		<section className='container mx-auto px-10 py-20'>
+		<section className='container mx-auto px-2 md:px-10 py-10 md:py-20'>
 			<div class='flex justify-between items-center '>
 				<div>
-					<h1 class='text-4xl font-semibold text-primary'>
+					<h1 class='text-2xl md:text-4xl font-semibold text-primary'>
 						Our Popular Collection
 					</h1>
 				</div>

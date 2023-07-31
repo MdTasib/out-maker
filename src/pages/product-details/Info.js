@@ -15,11 +15,11 @@ const Info = ({ category, changeCategory }) => {
 	return (
 		<section className='bg-[#F3F7FF] pt-16'>
 			<div className='container mx-auto px-10'>
-				<div className='flex items-center'>
+				<div className='block md:flex items-center'>
 					<h4 className='text-primary uppercase text-base md:text-4xl font-semibold'>
 						Ludlow Large Sectional
 					</h4>
-					<div className='bg-primary w-[2px] h-6 mx-2 md:mx-8'></div>
+					<div className='opacity-0 md:opacity-100 bg-primary w-[2px] h-6 mx-2 md:mx-8'></div>
 					<div className='rating'>
 						<input
 							type='radio'

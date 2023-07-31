@@ -34,8 +34,8 @@ const Review = () => {
 		<section>
 			{reviews.map(review => (
 				<div className='border-[#E3E3E3] bg-[#fefefe] border-[1px] rounded-lg p-4 mb-6'>
-					<div className='flex items-center gap-4'>
-						<img src={review.img} alt='' className='h-[55px] w-[55px]' />
+					<div className='block md:flex items-center gap-4'>
+						<img src={review.img} alt='' className='h-[55px] w-[55px] mb-1' />
 						<div className=''>
 							<div className='flex gap-2 text-primary items-center'>
 								<h5 className='uppercase text-sm md:text-xl font-semibold'>
@@ -78,7 +78,9 @@ const Review = () => {
 										className='mask mask-star-2 bg-orange-400'
 									/>
 								</div>
-								<p className='text-[#151414] font-semibold text-xl'>5.00</p>
+								<p className='text-[#151414] font-semibold text-xs md:text-xl'>
+									5.00
+								</p>
 							</div>
 						</div>
 					</div>
@@ -114,7 +116,7 @@ const Review = () => {
 
 							<div className='w-0 md:w-[1px] h-0 md:h-[20px] bg-primary mt-4'></div>
 
-							<div className='flex items-center gap-4 text-primary py-4 md:pb-0'>
+							<div className='flex items-center flex-wrap md:flex-nowrap gap-4 text-primary py-4 md:pb-0'>
 								<p>Share On:</p>
 								<div className='border-primary rounded-full w-9 h-9 border-[1px] p-2 hover:bg-primary hover:text-white cursor-pointer'>
 									<SlSocialFacebook />

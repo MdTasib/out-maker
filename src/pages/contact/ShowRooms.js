@@ -45,12 +45,14 @@ const ShowRooms = () => {
 	return (
 		<section className='py-10'>
 			<div className='text-left border-b-4 border-primary'>
-				<h2 className='text-primary text-3xl font-bold pb-3'>Showrooms</h2>
+				<h2 className='text-primary text-xl md:text-3xl font-bold pb-3'>
+					Showrooms
+				</h2>
 			</div>
 
-			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-4'>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-2 md:pt-10 gap-4'>
 				{rooms.map(room => (
-					<div className='my-10 md:my-0 border-b-4 pb-6'>
+					<div className='my-4 md:my-0 border-b-4 pb-6'>
 						<img src={room.image} alt='' />
 						<div className='flex flex-col '>
 							<h4 className='text-xl font-normal text-black tracking-wider pt-2'>
@@ -82,9 +84,15 @@ const ShowRooms = () => {
 								</a>
 							</div>
 
-							<Button className='btn btn-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 text-xl font-medium'>
+							{/* <Button
+								className='btn btn-primary text-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 font-medium'
+								style={{ fontSize: "24px !important" }}>
 								View Map <PiMapPinLineFill className='ms-2' />
-							</Button>
+							</Button> */}
+
+							<p className='btn hover:bg-primary text-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 font-medium text-xl'>
+								View Map <PiMapPinLineFill className='ms-2' />
+							</p>
 						</div>
 					</div>
 				))}

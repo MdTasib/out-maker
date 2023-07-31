@@ -8,10 +8,10 @@ import SingleBlog from "../../shared/Blog/SingleBlog";
 const Blogs = () => {
 	return (
 		<section>
-			<div className='text-center pt-20'>
+			<div className='text-center pt-10 md:pt-20'>
 				<h2 className='text-4xl font-semibold text-black'>COLLECTIONS</h2>
 				<h4 className='text-3xl font-medium text-[#002B5B] pt-2'>OUTMAKER</h4>
-				<p className='py-10 text-base font-light'>
+				<p className='py-4 md:py-10 text-base font-light'>
 					Outmaker offers 9 collections of outdoor furniture with unic designs
 					which will meet your special needs
 				</p>

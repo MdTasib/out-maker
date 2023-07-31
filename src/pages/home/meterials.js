@@ -38,13 +38,13 @@ const meterials = [
 const Meterials = () => {
 	return (
 		<section
-			className='py-20'
+			className='py-10 md:py-20'
 			style={{
 				background: `linear-gradient( 180deg, rgba(64, 123, 255, 0.06) 0%, rgba(244, 247, 255, 0) 100% )`,
 			}}>
-			<div className='container mx-auto px-10 '>
-				<div className='text-center w-2/3 mx-auto'>
-					<h2 className='text-primary font-semibold text-4xl'>
+			<div className='container mx-auto  px-2 md:px-10 '>
+				<div className='text-center w-4/5 md:w-2/3 mx-auto'>
+					<h2 className='text-primary font-semibold text-2xl md:text-4xl'>
 						Materials We Use
 					</h2>
 					<p className='text-[#666666] text-sm font-normal leading-7 pt-4'>
@@ -57,7 +57,7 @@ const Meterials = () => {
 				<div className='mt-10'>
 					<iframe
 						style={{ height: "600px" }}
-						className='w-full rounded-2xl'
+						className='w-full rounded-2xl iframe'
 						src='https://www.youtube.com/embed/cHBqwj0Ed_I'
 						frameBorder={0}
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
