@@ -6,7 +6,7 @@ import mic from "../../assets/images/mic.png";
 
 const Collections = () => {
 	return (
-		<main className='container mx-auto px-10 relative'>
+		<main className='container mx-auto px-2 md:px-10 relative'>
 			<PageNav />
 			<Blogs />
 			<Network />

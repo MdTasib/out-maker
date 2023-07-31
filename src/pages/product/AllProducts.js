@@ -38,7 +38,7 @@ const AllProducts = () => {
 	const [showModal, setShowModal] = useState(false);
 
 	return (
-		<div className='container mx-auto px-10'>
+		<div className='container mx-auto px-2 md:px-10'>
 			<nav className='py-8'>
 				<ul className='flex text-sm text-[#000000] font-normal'>
 					<li className='me-6 pb-1 border-b-2 border-b-black'>Home</li>
@@ -52,7 +52,7 @@ const AllProducts = () => {
 					Meet Arper’s New 2023 Collections That Inspire Beauty, Energy &
 					Vitality
 				</h2>
-				<p className='text-xl md:text-2xl font-light text-primary py-16'>
+				<p className='text-xl md:text-2xl font-light text-primary py-8 md:py-16'>
 					Ludlow mixes materials and textures, creating a design that feels both
 					modern and organic. Enjoy a low-profile frame wrapped in a light
 					wicker with weathered teak feet and textured Sunbrella fabrics.
