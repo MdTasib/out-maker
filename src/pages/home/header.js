@@ -10,7 +10,7 @@ const Header = () => {
 			style={{ backgroundImage: `url(${headerImage})` }}>
 			<div className='hero-content text-center'>
 				<div className='max-w-full pb-32'>
-					<h1 className='text-5xl text-white font-semibold uppercase'>
+					<h1 className='text-4xl md:text-5xl text-white font-semibold uppercase'>
 						Better Life outdoor
 					</h1>
 					<p className='py-6 text-white'>

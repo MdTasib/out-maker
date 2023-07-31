@@ -3,12 +3,12 @@ import Button from "../../shared/Button/Button";
 
 const ContactFrom = () => {
 	return (
-		<div className='py-10'>
+		<div className='py-2 md:py-10'>
 			<h4 className='font-bold text-3xl text-primary border-b-4 border-primary w-max mx-auto'>
 				CONTACT US
 			</h4>
 
-			<form action='' className='w-9/12 mx-auto pt-10'>
+			<form action='' className='w-full md:w-9/12 mx-auto pt-10'>
 				<input
 					type='text'
 					placeholder='Full Name *'

@@ -48,9 +48,9 @@ const SingleBlog = ({
 				)}
 
 				{contactPage ? (
-					<Button className='btn btn-primary btn-outline rounded-full border-2 capitalize hover:text-white gap-6 text-xl font-medium'>
+					<p className='btn hover:bg-primary text-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 font-medium text-xl'>
 						View Map <PiMapPinLineFill className='ms-2' />
-					</Button>
+					</p>
 				) : (
 					<Button className='btn border-primary text-primary hover:text-white hover:bg-primary btn-outline rounded-full border-2 capitalize'>
 						DISCOVER

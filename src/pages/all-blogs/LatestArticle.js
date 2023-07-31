@@ -46,7 +46,7 @@ const articles = [
 const LatestArticle = () => {
 	return (
 		<section>
-			<h4 className='text-3xl font-bold text-primary border-b-4 border-primary'>
+			<h4 className='text-2xl md:text-3xl font-bold text-primary border-b-4 border-primary'>
 				Latest Articles
 			</h4>
 
@@ -57,11 +57,11 @@ const LatestArticle = () => {
 							<img src={article.image} alt='' className='w-full h-full' />
 						</div>
 						<div className='basis-2/3 border-b-4 border-[#B8B8B8] flex flex-col justify-between'>
-							<h5 className='text-base lg:text-xl font-medium text-black'>
+							<h5 className='text-sm lg:text-xl font-medium text-black'>
 								{article.title}
 							</h5>
 
-							<div className='flex items-center gap-3 text-sm lg:text-base text-[#213343] font-normal pb-1'>
+							<div className='flex items-center justify-between gap-[6px] md:gap-3 text-xs lg:text-base text-[#213343] font-normal pb-1'>
 								<div className='flex items-center gap-2'>
 									<img src={article.user} alt='' className='w-10' />
 									<span className=''>{article.userName}</span>

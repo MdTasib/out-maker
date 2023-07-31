@@ -5,10 +5,10 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Envoirment = () => {
 	return (
-		<section className='container mx-auto px-10 py-20'>
+		<section className='container mx-auto  px-2 md:px-10 pb-20 pt-10'>
 			<div className='grid items-center grid-cols-1 md:grid-cols-2'>
 				<div className='mb-6 md:mb-0'>
-					<h4 className='text-primary text-4xl font-semibold'>
+					<h4 className='text-primary text-2xl md:text-4xl font-semibold'>
 						Our Product Protect <br />
 						Our Envoirment
 					</h4>

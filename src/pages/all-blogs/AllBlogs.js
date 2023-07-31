@@ -12,7 +12,7 @@ const AllBlogs = () => {
 	return (
 		<main>
 			<AllBlogsHeader />
-			<div className='container px-10 mx-auto'>
+			<div className='container px-2 md:px-10 mx-auto'>
 				<PageNav />
 				<FeatureArticle />
 				<LatestArticle />

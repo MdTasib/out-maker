@@ -2,11 +2,11 @@ import React from "react";
 
 const Pagination = () => {
 	return (
-		<div class='flex flex-col lg:flex-row justify-between'>
+		<div class='flex flex-col lg:flex-row justify-between items-center'>
 			<nav
 				aria-label='Pagination'
 				class='flex justify-center items-center text-gray-600 mt-8 lg:mt-0 font-semibold'>
-				<a href='#' class='p-2 mr-4 hover:bg-[#F5F6FF] flex text-[#879bb2]'>
+				<a href='#' class='p-2 mr-0 hover:bg-[#F5F6FF] flex text-[#879bb2]'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						class='h-6 w-6'
@@ -20,7 +20,7 @@ const Pagination = () => {
 							d='M15 19l-7-7 7-7'
 						/>
 					</svg>
-					<p>Previous</p>
+					<p className='text-sm md:text-base pt-1 md:pt-0'>Previous</p>
 				</a>
 				<a
 					href='#'
@@ -32,11 +32,11 @@ const Pagination = () => {
 					class='px-2 md:px-4 py-2 border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					2
 				</a>
-				<a
+				{/* <a
 					href='#'
 					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					3
-				</a>
+				</a> */}
 				<a
 					href='#'
 					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
@@ -47,8 +47,8 @@ const Pagination = () => {
 					class='px-2 md:px-4 py-2 hover:bg-[#F5F6FF] border-r-2 border-[#F5F6FF] text-primary text-sm'>
 					20
 				</a>
-				<a href='#' class='p-2 ml-4 hover:bg-[#F5F6FF] flex text-primary'>
-					<p className=''>Next</p>
+				<a href='#' class='p-2 ml-0 hover:bg-[#F5F6FF] flex text-primary'>
+					<p className='text-sm md:text-base pt-1 md:pt-0'>Next</p>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						class='h-6 w-6'

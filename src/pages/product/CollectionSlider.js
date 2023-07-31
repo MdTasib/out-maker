@@ -26,9 +26,9 @@ const collections = [
 
 const CollectionSlider = () => {
 	return (
-		<section className='container px-10 mx-auto pb-10 relative product-collection'>
+		<section className='container px-2 md:px-10 mx-auto pb-10 relative product-collection'>
 			<div className='text-left border-b-4 border-primary'>
-				<h2 className='text-primary text-3xl font-bold pb-3'>
+				<h2 className='text-primary text-xl md:text-3xl font-bold pb-3'>
 					Other Collections
 				</h2>
 			</div>
@@ -73,7 +73,7 @@ const CollectionSlider = () => {
 				slidesToSlide={1}
 				swipeable>
 				{collections.map(collection => (
-					<div className='py-10 mx-6'>
+					<div className='py-6 md:py-10 mx-6'>
 						<div className='relative text-center overflow-hidden'>
 							<img
 								src={collection.image}

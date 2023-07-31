@@ -11,7 +11,7 @@ const Network = () => {
 	return (
 		<section className='container mx-auto py-10'>
 			<div className='text-left border-b-4 border-primary'>
-				<h2 className='text-primary text-3xl font-bold pb-3'>
+				<h2 className='text-primary text-2xl md:text-3xl font-bold pb-3'>
 					Outmaker Instagram Network
 				</h2>
 			</div>

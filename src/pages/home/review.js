@@ -67,7 +67,7 @@ const reviews = [
 
 const Review = () => {
 	return (
-		<section className='container mx-auto px-10 py-20 review'>
+		<section className='container mx-auto px-2 md:px-10 py-10 md:py-20 review'>
 			<div class='flex justify-between items-center absolute'>
 				<div className=''>
 					<h1 class='text-2xl md:text-4xl font-semibold text-primary'>
@@ -117,7 +117,7 @@ const Review = () => {
 				swipeable>
 				{reviews.map(review => (
 					<div className='px-4'>
-						<div class='flex flex-col justify-between rounded-lg border-2 border-[#F2F2F2] p-8 shadow hover:shadow-xl max-w-sm mt-24 hover:border-white'>
+						<div class='flex flex-col justify-between rounded-lg border-2 border-[#F2F2F2] p-4 md:p-8 shadow hover:shadow-xl max-w-sm mt-16 md:mt-24 hover:border-white'>
 							<div className='flex justify-between items-center'>
 								<div className='flex text-white'>
 									<AiFillStar className='bg-[#F1AB3E] p-1 me-1' size={24} />
