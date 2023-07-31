@@ -14,7 +14,7 @@ const Navbar = () => {
 			<div
 				className='relative z-10'
 				style={{ boxShadow: "rgb(237 235 235 / 69%) 0px 6px 20px 0px" }}>
-				<div className='container mx-auto px-10 py-6 md:py-0 navbar relative flex  justify-between items-center'>
+				<div className='container mx-auto px-2 md:px-10 py-6 md:py-0 navbar relative flex  justify-between items-center'>
 					<div className='navbar-start hidden lg:flex'>
 						<div class='text-[#363434] text-sm order-3 w-full md:w-auto md:order-2'>
 							<ul class='flex font-normal justify-between'>
@@ -78,12 +78,12 @@ const Navbar = () => {
 					</div>
 
 					<div className='pe-0 md:pe-5'>
-						<div className='relative text-[#AAA9AA] me-0 md:me-6'>
+						<div className='relative text-[#AAA9AA] me-2 md:me-6'>
 							<input
 								type='search'
 								name='serch'
 								placeholder='Search'
-								className='bg-[#F8F6F8] h-8 px-5 pr-10 rounded-full text-xs focus:outline-none'
+								className='bg-[#F8F6F8] h-8 px-5 pr-10 rounded-full text-xs focus:outline-none w-[150px] md:w-full'
 							/>
 							<button
 								type='submit'
@@ -106,10 +106,10 @@ const Navbar = () => {
 							</button>
 						</div>
 
-						<div className='hidden md:block border border-gray-400 rounded-full p-1 me-6'>
+						<div className='border border-gray-400 rounded-full p-1 me-2 md:me-6'>
 							<PiHandbag />
 						</div>
-						<div className='hidden md:block  border border-gray-400 rounded-full p-1 '>
+						<div className=' border border-gray-400 rounded-full p-1 '>
 							<GoPeople />
 						</div>
 					</div>
