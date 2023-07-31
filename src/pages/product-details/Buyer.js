@@ -17,7 +17,7 @@ const Buyer = () => {
 						value === "review"
 							? "bg-primary text-white"
 							: "bg-white text-primary"
-					} hover:bg-primary rounded-full btn btn-outline justify-start text-sm font-normal capitalize`}
+					} hover:bg-primary rounded-full btn btn-outline justify-start text-sm font-normal capitalize mb-2`}
 					onClick={() => setValue("review")}>
 					Buyers Review
 				</button>
@@ -26,7 +26,7 @@ const Buyer = () => {
 						value === "question"
 							? "bg-primary text-white"
 							: "bg-white text-primary"
-					} hover:bg-primary rounded-full btn btn-outline justify-start text-sm font-normal capitalize`}
+					} hover:bg-primary rounded-full btn btn-outline justify-start text-sm font-normal capitalize mb-2`}
 					onClick={() => setValue("question")}>
 					Question
 				</button>

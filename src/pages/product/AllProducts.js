@@ -59,15 +59,15 @@ const AllProducts = () => {
 				</p>
 			</div>
 
-			<div className='flex justify-between pt-14'>
-				<p className='border-1 border text-lg font-medium rounded-full py-2 px-4 w-max border-primary'>
+			<div className='flex justify-between pt-14 gap-2'>
+				<p className='border-1 border text-xs md:text-lg font-medium rounded-full py-2 px-4 w-max border-primary text-center'>
 					12 Products
 				</p>
 				<p
-					className='flex w-max border items-center px-4 justify-between border-1 text-lg font-medium rounded-full py-2 border-primary cursor-pointer hover:bg-primary hover:text-white gap-x-8'
+					className='flex w-max border items-center px-4 justify-between border-1 text-xs md:text-lg font-medium rounded-full py-2 border-primary cursor-pointer hover:bg-primary hover:text-white gap-x-8'
 					onClick={() => setShowModal(true)}>
 					Filter
-					<span className='pl-4'>
+					<span className='pl-0 md:pl-4'>
 						<BsFillFilterCircleFill />
 					</span>
 				</p>
@@ -117,7 +117,7 @@ const AllProducts = () => {
 
 						<div class='absolute inset-0 bg-cover bg-center z-0'></div>
 
-						<div className='opacity-0 hover:opacity-[1] duration-300 '>
+						<div className='opacity-1 md:opacity-0 hover:opacity-[1] duration-300 '>
 							<p class='absolute inset-0 z-10 flex justify-start items-start top-4 left-4 text-xs text-black font-normal p-1'>
 								<AiFillStar color='' size={20} />
 								<AiFillStar color='' size={20} />
@@ -142,7 +142,7 @@ const AllProducts = () => {
 							{/*content*/}
 							<div className='border-0 rounded-r-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none p-10'>
 								<div className='flex justify-between border-b-2 border-primary mb-4'>
-									<p className='text-xl font-bold text-primary'>FILTER</p>
+									<p className='md:text-xl font-bold text-primary'>FILTER</p>
 									<p
 										className='font-medium text-2xl cursor-pointer'
 										onClick={() => setShowModal(false)}>

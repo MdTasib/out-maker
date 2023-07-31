@@ -7,7 +7,7 @@ import mic from "../../assets/images/mic.png";
 
 const Blog = () => {
 	return (
-		<main className='container mx-auto px-10 relative'>
+		<main className='container mx-auto px-2 md:px-10 relative'>
 			<BlogHeader />
 			<Posts />
 			<Articels />

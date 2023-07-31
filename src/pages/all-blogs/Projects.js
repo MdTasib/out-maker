@@ -27,7 +27,7 @@ const articles = [
 const Projects = () => {
 	return (
 		<section className='pt-14'>
-			<h4 className='text-3xl font-bold text-primary border-b-4 border-primary'>
+			<h4 className='text-2xl md:text-3xl font-bold text-primary border-b-4 border-primary'>
 				Outdoor Projects
 			</h4>
 

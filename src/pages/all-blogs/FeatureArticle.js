@@ -62,18 +62,18 @@ const FeatureArticle = () => {
 			</div>
 
 			<div className='basis-1/2 pt-8 md:pt-0'>
-				<h4 className='text-3xl font-bold text-primary border-b-4 border-primary'>
+				<h4 className='text-2xl md:text-3xl font-bold text-primary border-b-4 border-primary'>
 					Featured Articles
 				</h4>
 
 				{articles.map(article => (
 					<div className='flex justify-between border-b-4 border-[#B8B8B8] py-4'>
 						<div className='basis-2/3'>
-							<h5 className='text-base md:text-xl font-medium text-black'>
+							<h5 className='text-sm md:text-xl font-medium text-black'>
 								{article.title}
 							</h5>
 
-							<div className='flex items-center gap-3 text-sm md:text-base text-[#213343] font-normal pt-3'>
+							<div className='flex items-center justify-between md:justify-normal gap-[6px] md:gap-3 text-xs md:text-base text-[#213343] font-normal md:pt-3'>
 								<div className='flex items-center gap-2'>
 									<img src={article.user} alt='' className='w-10' />
 									<span className=''>{article.userName}</span>

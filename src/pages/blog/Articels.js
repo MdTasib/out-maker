@@ -30,7 +30,7 @@ const Articels = () => {
 	return (
 		<div className=''>
 			<div className='text-left border-b-4 border-primary'>
-				<h2 className='text-primary text-3xl font-bold pb-3'>
+				<h2 className='text-primary text-2xl md:text-3xl font-bold pb-3'>
 					Related Articles
 				</h2>
 			</div>
@@ -78,13 +78,13 @@ const Articels = () => {
 					{articles.map(articel => (
 						<div className='mx-6'>
 							<div className='relative'>
-								<div className='border-b-4 border-[#B8B8B8] my-10 mx-2'>
+								<div className='md:border-b-4 border-[#B8B8B8] my-10 mx-2'>
 									<img src={articel.image} alt='' />
 									<div className='h-36'>
-										<h4 className='text-3xl font-semibold text-black pt-2'>
+										<h4 className='text-xl md:text-3xl font-semibold  text-[#B8B8B8] pt-2'>
 											{articel.title}
 										</h4>
-										<p className='text-xl font-normal text-black py-4'>
+										<p className='text-base md:text-xl font-normal  text-[#B8B8B8] py-1 md:py-4'>
 											{articel.details}
 											&rarr;
 										</p>

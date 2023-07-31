@@ -82,9 +82,15 @@ const ShowRooms = () => {
 								</a>
 							</div>
 
-							<Button className='btn btn-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 text-xl font-medium'>
+							{/* <Button
+								className='btn btn-primary text-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 font-medium'
+								style={{ fontSize: "24px !important" }}>
 								View Map <PiMapPinLineFill className='ms-2' />
-							</Button>
+							</Button> */}
+
+							<p className='btn hover:bg-primary text-primary mx-auto btn-outline rounded-full border-2 capitalize hover:text-white gap-6 font-medium text-xl'>
+								View Map <PiMapPinLineFill className='ms-2' />
+							</p>
 						</div>
 					</div>
 				))}
