@@ -25,7 +25,7 @@ const ProductDetails = () => {
 			<Buyer />
 
 			<div className='absolute right-0 bottom-[100px]'>
-				<img src={mic} alt='' />
+				<img src={mic} alt='' className='w-3/4 md:w-full' />
 			</div>
 		</main>
 	);

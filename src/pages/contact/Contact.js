@@ -47,7 +47,7 @@ const Contact = () => {
 			<Network />
 
 			<div className='absolute right-0 bottom-[0px]'>
-				<img src={mic} alt='' />
+				<img src={mic} alt='' className='w-3/4 md:w-full' />
 			</div>
 		</main>
 	);

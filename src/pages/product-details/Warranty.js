@@ -4,7 +4,7 @@ import Button from "../../shared/Button/Button";
 
 const Warranty = () => {
 	return (
-		<section className='container mx-auto p-10'>
+		<section className='container mx-auto p-4 md:p-10'>
 			<h4 className='text-primary text-2xl font-semibold uppercase'>
 				Warranty
 			</h4>

@@ -29,7 +29,7 @@ const BlogHeader = () => {
 				<p>By Kelly Bill</p>
 			</div>
 
-			<div className='flex justify-center gap-4 pt-7 md: pt-10'>
+			<div className='flex justify-center gap-4 pt-7 md:pt-10'>
 				<span className='bg-primary p-1 rounded-full'>
 					<TiSocialFacebook size={30} color='white' />
 				</span>

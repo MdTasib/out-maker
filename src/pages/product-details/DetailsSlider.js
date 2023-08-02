@@ -26,7 +26,7 @@ const sliders = [
 const DetailsSlider = () => {
 	return (
 		<header className='bg-[#F3F7FF]'>
-			<div className='text-center pt-24'>
+			<div className='text-center pt-10 md:pt-24'>
 				<img src={headerImage} alt='' className='w-7/12 mx-auto' />
 				<img src={roundedImage} alt='' className='w-8/12 mx-auto' />
 			</div>
