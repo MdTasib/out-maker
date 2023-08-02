@@ -14,7 +14,7 @@ import {
 const Info = ({ category, changeCategory }) => {
 	return (
 		<section className='bg-[#F3F7FF] pt-16'>
-			<div className='container mx-auto px-10'>
+			<div className='container mx-auto px-2 md:px-10'>
 				<div className='block md:flex items-center'>
 					<h4 className='text-primary uppercase text-base md:text-4xl font-semibold'>
 						Ludlow Large Sectional
@@ -121,7 +121,7 @@ const Info = ({ category, changeCategory }) => {
 					</div>
 				</div>
 
-				<div className='py-8'>
+				<div className='pt-8 pb-0 md:pb-8'>
 					<button className='btn btn-outline bg-white hover:bg-primary text-primary rounded-full hover:text-white w-[300px] md:w-[400px] text-sm font-normal'>
 						<p className='flex gap-2 items-center'>
 							<BsInfoCircle /> In stock - Ships within Two Weeks

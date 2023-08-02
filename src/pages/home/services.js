@@ -35,9 +35,9 @@ const Services = () => {
 	return (
 		<section className='bg-accent py-10'>
 			<div className='container mx-auto px-4'>
-				<div class='grid justify-between grid-cols-2 row-gap-8 md:grid-cols-4 divide-x-2 divide-dashed'>
+				<div class='grid justify-between grid-cols-2 row-gap-8 md:grid-cols-4 md:divide-x-2 md:divide-dashed'>
 					{services.map(service => (
-						<div className='text-center'>
+						<div className='text-center p-2 md:p-0'>
 							<div className='flex items-center justify-center mx-auto mb-3 rounded-full'>
 								<img src={service.image} alt='' className='w-[90px] h-[90px]' />
 							</div>
