@@ -7,7 +7,7 @@ const Buyer = () => {
 	const [value, setValue] = useState("review");
 
 	return (
-		<div className='container mx-auto px-10 pb-10'>
+		<div className='container mx-auto px-2 md:px-10 pb-10'>
 			<h2 className='text-3xl text-primary font-semibold uppercase'>
 				Buyers review and question
 			</h2>

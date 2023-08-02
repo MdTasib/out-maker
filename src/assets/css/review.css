@@ -70,3 +70,21 @@
 		left: 12% !important;
 	}
 }
+
+@media only screen and (max-width: 780px) {
+	.react-multiple-carousel__arrow::before {
+		font-size: 20px !important;
+	}
+
+	.review .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+		width: 30px;
+		height: 30px;
+		right: 0;
+	}
+
+	.review .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+		width: 30px;
+		height: 30px;
+		left: 14% !important;
+	}
+}

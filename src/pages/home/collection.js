@@ -10,15 +10,15 @@ import { Link } from "react-router-dom";
 const Collection = () => {
 	return (
 		<section className='container mx-auto px-2 md:px-10 py-10 md:py-20'>
-			<div class='flex justify-between items-center '>
-				<div>
+			<div class='flex justify-between items-center'>
+				<div className='basis-2/3'>
 					<h1 class='text-2xl md:text-4xl font-semibold text-primary'>
 						Our Popular Collection
 					</h1>
 				</div>
 				<Link
 					to='/all'
-					className='flex items-center text-primary text-sm font-semibold cursor-pointer'>
+					className='flex items-center text-primary text-sm font-semibold cursor-pointer basis-1/3 justify-end text-end'>
 					View All
 					<BsArrowRight className='ms-2' />
 				</Link>

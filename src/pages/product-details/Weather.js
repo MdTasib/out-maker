@@ -66,7 +66,7 @@ const Weather = () => {
 	};
 
 	return (
-		<section className='container px-10 mx-auto'>
+		<section className='container px-3 md:px-10 mx-auto'>
 			<div className='header'>
 				<img src={sofa} alt='' />
 				<p className='text-primary text-xl font-normal py-6 leading-relaxed'>
